@@ -98,6 +98,7 @@ form button {
     width: 100%;
     background: url("../images/2.jpg") no-repeat center center / cover;
     position: relative;
+    opacity: 0.8;
 }
 .landing-layer nav {
     padding: 25px 0;
