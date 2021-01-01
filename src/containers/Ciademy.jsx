@@ -47,7 +47,7 @@ const Ciademy = props => {
                             <input
                                 type="text"
                                 name=""
-                                placeholder="?What do you want to Learn"
+                                placeholder="What do you want to Learn?"
                             />
                             <button>
                                 <i className="zmdi zmdi-search"></i>
@@ -499,7 +499,7 @@ const Ciademy = props => {
                                     <h2>
                                         <a href="">
                                             {" "}
-                                            ++C{" "}
+                                            C++{" "}
                                         </a>
                                     </h2>
                                     <span> 199$ USD </span>
@@ -548,7 +548,7 @@ const Ciademy = props => {
                                     <h2>
                                         <a href="">
                                             {" "}
-                                            #C{" "}
+                                            C#{" "}
                                         </a>
                                     </h2>
                                     <span> 199$ USD </span>
