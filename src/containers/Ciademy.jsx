@@ -155,7 +155,6 @@ const Ciademy = props => {
                                         </a>
                                     </h2>
                                     <span>Free </span>
-                                    <i>1:52:32</i>
                                 </article>
                             </div>
 
@@ -171,7 +170,6 @@ const Ciademy = props => {
                                         </a>
                                     </h2>
                                     <span> 299$ USD  </span>
-                                    <i>1:52:32</i>
                                 </article>
                             </div>
 
@@ -187,7 +185,6 @@ const Ciademy = props => {
                                         </a>
                                     </h2>
                                     <span> 199$ USD </span>
-                                    <i>1:52:32</i>
                                 </article>
                             </div>
 
@@ -203,7 +200,6 @@ const Ciademy = props => {
                                         </a>
                                     </h2>
                                     <span> 149$ USD  </span>
-                                    <i>1:52:32</i>
                                 </article>
                             </div>
 
@@ -219,7 +215,6 @@ const Ciademy = props => {
                                         </a>
                                     </h2>
                                     <span> Free</span>
-                                    <i>1:52:32</i>
                                 </article>
                             </div>
 
@@ -235,7 +230,6 @@ const Ciademy = props => {
                                         </a>
                                     </h2>
                                     <span> Free </span>
-                                    <i>1:52:32</i>
                                 </article>
                             </div>
 
@@ -251,7 +245,6 @@ const Ciademy = props => {
                                         </a>
                                     </h2>
                                     <span> 399$ USD  </span>
-                                    <i>1:52:32</i>
                                 </article>
                             </div>
 
@@ -267,7 +260,6 @@ const Ciademy = props => {
                                         </a>
                                     </h2>
                                     <span> 199$ USD </span>
-                                    <i>1:52:32</i>
                                 </article>
                             </div>
 
@@ -295,7 +287,6 @@ const Ciademy = props => {
                                         </a>
                                     </h2>
                                     <span>Free </span>
-                                    <i>1:52:32</i>
                                 </article>
                             </div>
 
@@ -311,7 +302,6 @@ const Ciademy = props => {
                                         </a>
                                     </h2>
                                     <span> 299$ USD  </span>
-                                    <i>1:52:32</i>
                                 </article>
                             </div>
                             
@@ -327,7 +317,6 @@ const Ciademy = props => {
                                         </a>
                                     </h2>
                                     <span> 149$ USD  </span>
-                                    <i>1:52:32</i>
                                 </article>
                             </div>
 
@@ -344,7 +333,6 @@ const Ciademy = props => {
                                         </a>
                                     </h2>
                                     <span> 199$ USD </span>
-                                    <i>1:52:32</i>
                                 </article>
                             </div>
 
@@ -360,7 +348,6 @@ const Ciademy = props => {
                                         </a>
                                     </h2>
                                     <span> 149$ USD  </span>
-                                    <i>1:52:32</i>
                                 </article>
                             </div>
                             
@@ -376,7 +363,6 @@ const Ciademy = props => {
                                         </a>
                                     </h2>
                                     <span> 149$ USD  </span>
-                                    <i>1:52:32</i>
                                 </article>
                             </div>
 
@@ -392,7 +378,6 @@ const Ciademy = props => {
                                         </a>
                                     </h2>
                                     <span> 199$ USD </span>
-                                    <i>1:52:32</i>
                                 </article>
                             </div>
 
@@ -408,7 +393,6 @@ const Ciademy = props => {
                                         </a>
                                     </h2>
                                     <span> Free</span>
-                                    <i>1:52:32</i>
                                 </article>
                             </div>
 
@@ -424,7 +408,6 @@ const Ciademy = props => {
                                         </a>
                                     </h2>
                                     <span> Free </span>
-                                    <i>1:52:32</i>
                                 </article>
                             </div>
 
@@ -440,7 +423,6 @@ const Ciademy = props => {
                                         </a>
                                     </h2>
                                     <span> 399$ USD  </span>
-                                    <i>1:52:32</i>
                                 </article>
                             </div>
 
@@ -456,7 +438,6 @@ const Ciademy = props => {
                                         </a>
                                     </h2>
                                     <span> 199$ USD </span>
-                                    <i>1:52:32</i>
                                 </article>
                             </div>
 
@@ -472,7 +453,6 @@ const Ciademy = props => {
                                         </a>
                                     </h2>
                                     <span> 199$ USD </span>
-                                    <i>1:52:32</i>
                                 </article>
                             </div>
 
@@ -488,7 +468,6 @@ const Ciademy = props => {
                                         </a>
                                     </h2>
                                     <span> 199$ USD </span>
-                                    <i>1:52:32</i>
                                 </article>
                             </div>
 
@@ -504,7 +483,6 @@ const Ciademy = props => {
                                         </a>
                                     </h2>
                                     <span> 199$ USD </span>
-                                    <i>1:52:32</i>
                                 </article>
                             </div>
 
@@ -521,7 +499,6 @@ const Ciademy = props => {
                                         </a>
                                     </h2>
                                     <span> 149$ USD  </span>
-                                    <i>1:52:32</i>
                                 </article>
                             </div>
 
@@ -537,7 +514,6 @@ const Ciademy = props => {
                                         </a>
                                     </h2>
                                     <span> 199$ USD </span>
-                                    <i>1:52:32</i>
                                 </article>
                             </div>
                            
@@ -553,7 +529,6 @@ const Ciademy = props => {
                                         </a>
                                     </h2>
                                     <span> 199$ USD </span>
-                                    <i>1:52:32</i>
                                 </article>
                             </div>
 
@@ -570,7 +545,6 @@ const Ciademy = props => {
                                         </a>
                                     </h2>
                                     <span> 149$ USD  </span>
-                                    <i>1:52:32</i>
                                 </article>
                             </div>
                         
@@ -588,7 +562,6 @@ const Ciademy = props => {
                                         </a>
                                     </h2>
                                     <span> 199$ USD </span>
-                                    <i>1:52:32</i>
                                 </article>
                             </div>
 
