@@ -7,7 +7,7 @@ const Ciademy = props => {
                 <div className="container">
                     <nav>
                         <div className="row">
-                            <div className="col-sm-6 col-xs-12">
+                            <div className="col-sm-6 col-xs-12 myhead">
                                 <ul>
                                     <li>
                                         <a href=""> Cooperation </a>
@@ -18,9 +18,10 @@ const Ciademy = props => {
                             </div>
                             <div className="col-sm-6 col-xs-12">
                                 <div className="clientarea">
-                                    <div className="loggein ">
+                                    <div className="loggedin">
                                         <i className="zmdi zmdi-account"></i>
-                                        <a href="">Welcome &nbsp; Ciamac Da</a>
+                                        &nbsp; 
+                                        <a href="">&nbsp;&nbsp;Welcome &nbsp;&nbsp;  Ciamac Da</a>
                                     </div>
                                     <div className="signin hidden">
                                         <i className="zmdi zmdi-account"></i>
