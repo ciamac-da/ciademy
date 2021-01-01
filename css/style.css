@@ -1,3 +1,7 @@
+*{
+    direction: ltr !important;
+
+}
 
 html {
     overflow-x: hidden;
@@ -5,13 +9,20 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-family: "BYekan";
+    font-family: 'Staatliches', cursive;
     font-size: 14px;
     word-spacing: -1px;
     background-color: #f2f2f2;
 }
 .ciademy-logo{
     border-radius: 100%;
+}
+input{
+    text-align: center;
+}
+.myhead{
+    display: flex;
+    justify-content: flex-end;
 }
 /***********Default setting************/
 
@@ -132,13 +143,18 @@ form button {
 .landing-layer header h1 {
     line-height: 30px;
     padding: 10px 0 20px;
-    font-size: 31px;
+    font-size: 60px;
+    color: green;
+    text-shadow: 5px 5px 5px black;
 }
 .landing-layer header h2,
 .landing-layer header h3 {
     line-height: 30px;
     padding: 10px 0;
-    font-size: 23px;
+    font-size: 35px;
+    color: green;
+    text-shadow: 3px 3px 3px black;
+    
 }
 .landing-layer .search-form {
     width: 500px;
