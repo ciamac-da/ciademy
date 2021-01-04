@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = () => {
     return ( 
-        <>
+        <React.Fragment>
                    <header>
                         <a href="" className="logo">
                             <img src="images/ciademy.jpg" className="ciademy-logo" />
@@ -25,7 +25,7 @@ const Header = () => {
                             </button>
                         </form>
                     </div>
-        </>
+        </React.Fragment>
      );
 }
  

@@ -55,6 +55,10 @@ h6 {
     margin: 0;
     padding: 0;
 }
+h2{
+    color: white !important;
+    text-shadow: 3px 3px 3px black !important;
+}
 img {
     max-width: 100%;
 }
@@ -78,6 +82,9 @@ form button {
     -ms-transition: all 0.2s linear 0s;
     -o-transition: all 0.2s linear 0s;
     transition: all 0.2s linear 0s;
+}
+#home-page{
+    background-color: silver !important;
 }
 
 .user-account .avatar-layer ul:after,
