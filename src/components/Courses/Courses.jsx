@@ -5,7 +5,7 @@ const Courses = () => {
         <>
                             <section className="terms-items">
                         <header>
-                            <h2> All &nbsp; Courses </h2>
+                            <h2 id="h2"> All &nbsp; Courses </h2>
                         </header>
                         <div className="row">
                        
