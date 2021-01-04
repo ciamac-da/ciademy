@@ -2,39 +2,26 @@ import React from "react";
 import Foorter from "../components/common/Footer.jsx";
 import Courses from '../components/Courses/Courses';
 import MainNav from '../components/Navs/MainNav';
+import TopNav from '../components/Navs/TopNav';
 
 const Ciademy = props => {
     return (
         <React.Fragment>
             <div className="landing-layer">
                 <div className="container">
-                    <nav>
-                        <div className="row">
-                            <div className="col-sm-6 col-xs-12 myhead">
-                                <ul>
-                                    <li>
-                                        <a href=""> Cooperation </a>
-                                        <a href=""> About us </a>
-                                        <a href=""> Contact us </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className="col-sm-6 col-xs-12">
-                                <div className="clientarea">
-                                    <div className="loggedin">
-                                        <i className="zmdi zmdi-account"></i>
-                                        &nbsp; 
-                                        <a href="">&nbsp;&nbsp;Welcome &nbsp;&nbsp;  Ciamac Da</a>
-                                    </div>
-                                    <div className="signin hidden">
-                                        <i className="zmdi zmdi-account"></i>
-                                        <a href=""> Login</a> /
-                                        <a href=""> Register </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </nav>
+                
+                
+                <TopNav 
+           /*
+           ....########..#######..########.....##....##....###....##.....##
+           .......##....##.....##.##.....##....###...##...##.##...##.....##
+           .......##....##.....##.##.....##....####..##..##...##..##.....##
+           .......##....##.....##.########.....##.##.##.##.....##.##.....##
+           .......##....##.....##.##...........##..####.#########..##...##.
+           .......##....##.....##.##...........##...###.##.....##...##.##..
+           .......##.....#######..##...........##....##.##.....##....###...
+           */
+        />
 
                     <header>
                         <a href="" className="logo">
