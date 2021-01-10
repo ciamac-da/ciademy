@@ -1,4 +1,5 @@
 import React, {Fragment} from 'react';
+import {withRouter} from "react-router-dom";
 import Foorter from "../common/Footer.jsx";
 import MainNav from '../Navs/MainNav.jsx';
 import TopNav from '../Navs/TopNav.jsx';
@@ -6,6 +7,7 @@ import Header from '../common/Header.jsx';
 
 
 const MainLayout = props => {
+   const {pathname} = props.location 
     return ( 
         <>
         <Fragment>
@@ -22,17 +24,7 @@ const MainLayout = props => {
            .......##.....#######..##...........##....##.##.....##....###...
            */
         />
-              <Header 
-                  /*
-                  .##.....##.########....###....########..########.########....
-                  .##.....##.##.........##.##...##.....##.##.......##.....##...
-                  .##.....##.##........##...##..##.....##.##.......##.....##...
-                  .#########.######...##.....##.##.....##.######...########....
-                  .##.....##.##.......#########.##.....##.##.......##...##.....
-                  .##.....##.##.......##.....##.##.....##.##.......##....##....
-                  .##.....##.########.##.....##.########..########.##.....##...
-                  */       
-              />             
+             {pathname === "/" ? <Header /> : null} 
                 </div>
             </div>
          <MainNav 
@@ -74,4 +66,4 @@ const MainLayout = props => {
         </>
      );
 }
-export default MainLayout;
+export default withRouter(MainLayout);
