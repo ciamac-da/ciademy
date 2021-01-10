@@ -8,9 +8,9 @@ const TopNav = () => {
                             <div className="col-sm-6 col-xs-12 myhead">
                                 <ul>
                                     <li>
-                                        <NavLink to="" exact> Home </NavLink>
-                                        <a href=""> About us </a>
-                                        <a href=""> Contact us </a>
+                                        <NavLink to="" exact className="myHome"> Home </NavLink>
+                                        <a href="" className="myHome"> About us </a>
+                                        <a href="" className="myHome"> Contact us </a>
                                     </li>
                                 </ul>
                             </div>
@@ -21,11 +21,11 @@ const TopNav = () => {
                                         &nbsp;
                                         &nbsp;
                                         &nbsp;
-                                        <NavLink to="/login"    className={{fontsize:"20px"}}  activeStyle={{color:"green", fontSize:"25px"}}> Login</NavLink> 
+                                        <NavLink to="/login"  activeStyle={{color:"green", fontSize:"30px"}}> Login</NavLink> 
                                         &nbsp;
                                         /
                                         &nbsp;
-                                        <NavLink to="/register" className={{fontsize:"20px"}}  activeStyle={{color:"green", fontSize:"25px"}}> Register </NavLink>
+                                        <NavLink to="/register" activeStyle={{color:"green", fontSize:"30px"}}> Register </NavLink>
                                     </div>
                                 </div>
                             </div>

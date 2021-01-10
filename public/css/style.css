@@ -91,6 +91,8 @@ li{
 }
 .myBtn2{
     color: #2aaf27;
+    font-weight: bolder;
+    font-size: 15px;
     text-shadow: 3px 3px 3px white !important;
 }
 .myBtn2:hover{
@@ -101,6 +103,12 @@ li{
     text-align: center;
     justify-content: center;
     display: flex;
+}
+.signin{
+    font-size: 20px;
+}
+.myHome{
+    font-size: 20px !important;
 }
 /********** Transition ************/
 a,
@@ -421,6 +429,8 @@ footer .top-footer {
 }
 .client-page .container-content .link a:hover {
     color: #2c373b;
+    text-shadow: 3px 3px 3px white !important;
+
 }
 .client-page .container-content .link a i {
     font-size: 17px;
