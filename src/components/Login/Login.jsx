@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from 'react-router-dom';
 
 const Login = () => {
     return (
@@ -49,11 +50,11 @@ const Login = () => {
                                 {" "}
                                 <i className="zmdi zmdi-lock"></i> &nbsp;&nbsp;Password&nbsp;&nbsp;Forgot
                             </a>
-                            <a href="">
+                            <NavLink to="/register">
                                 {" "}
-                                <i className="zmdi zmdi-account"></i> &nbsp;&nbsp;Membership
+                                <i className="zmdi zmdi-account"></i> &nbsp;&nbsp;Register
                                {" "}
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="myBtn">
                             {" "}

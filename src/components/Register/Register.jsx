@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from 'react-router-dom';
 
 const Register = () => {
     return (
@@ -74,12 +75,12 @@ const Register = () => {
                                 &nbsp;&nbsp;and 
                                 &nbsp;&nbsp;Conditions
                             </a>
-                            <a href="">
+                            <NavLink to="/login">
                                 {" "}
                                 <i className="zmdi zmdi-account"></i> 
                                 &nbsp;&nbsp;Login
                                 {" "}
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="myBtn">
                         <button className="btn btn-light myBtn2">
