@@ -5,10 +5,10 @@ const Register = () => {
         <>
         <main className="client-page">
             <div className="container-content">
-                <header>
-                    <h2> Register </h2>
-                </header>
-
+            <header>
+                <img src="https://img.icons8.com/ios/50/000000/security-user-male.png" className="myLogo"/>
+                    <h2 className="h2">Register </h2>
+                    </header>
                 <div className="form-layer">
                     <form action="" method="">
                         <div className="input-group">
@@ -52,7 +52,16 @@ const Register = () => {
 
                         <div className="accept-rules">
                             <label>
-                                <input type="checkbox" name="" /> I accept the rules and regulations of the site! 
+                                <input type="checkbox" name="" />
+                                 &nbsp;&nbsp;I 
+                                 &nbsp;&nbsp;accept 
+                                 &nbsp;&nbsp;the 
+                                 &nbsp;&nbsp;rules 
+                                 &nbsp;&nbsp;and 
+                                 &nbsp;&nbsp;regulations 
+                                 &nbsp;&nbsp;of 
+                                 &nbsp;&nbsp;the 
+                                 &nbsp;&nbsp;site! 
                               {" "}
                             </label>
                         </div>
@@ -61,21 +70,24 @@ const Register = () => {
                             <a href="">
                                 {" "}
                                 <i className="zmdi zmdi-assignment"></i>
-                                Terms and Conditions
+                                &nbsp;&nbsp;Terms 
+                                &nbsp;&nbsp;and 
+                                &nbsp;&nbsp;Conditions
                             </a>
                             <a href="">
                                 {" "}
                                 <i className="zmdi zmdi-account"></i> 
-                                Login
+                                &nbsp;&nbsp;Login
                                 {" "}
                             </a>
                         </div>
-
-                        <button className="btn btn-success">
+                        <div className="myBtn">
+                        <button className="btn btn-light myBtn2">
                              {" "}
-                               Register                            
+                             &nbsp;&nbsp;Register                            
                             {" "}
                         </button>
+                        </div>
                     </form>
                 </div>
             </div>

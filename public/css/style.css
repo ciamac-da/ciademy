@@ -55,7 +55,7 @@ h6 {
     margin: 0;
     padding: 0;
 }
-#h2{
+.h2{
     color: white !important;
     text-shadow: 3px 3px 3px black !important;
 }
@@ -71,6 +71,36 @@ ul{
 }
 li{
     list-style: none !important;
+}
+.container-content{
+   background-color: #2aaf27 !important;
+   color: white;
+}
+.remember-me{
+    text-shadow: 3px 3px 3px black !important;
+    font-size: 16px;
+}
+.accept-rules{
+    text-shadow: 3px 3px 3px black !important;
+    font-size: 16px;
+}
+.myBtn{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.myBtn2{
+    color: #2aaf27;
+    text-shadow: 3px 3px 3px white !important;
+}
+.myBtn2:hover{
+    background-color: white;
+}
+.myLogo{
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    display: flex;
 }
 /********** Transition ************/
 a,
@@ -385,8 +415,9 @@ footer .top-footer {
 .client-page .container-content .link a {
     display: block;
     line-height: 30px;
-    font-size: 14px;
-    color: #1cbdf9;
+    font-size: 16px;
+    color: white;
+    text-shadow: 3px 3px 3px black !important;
 }
 .client-page .container-content .link a:hover {
     color: #2c373b;

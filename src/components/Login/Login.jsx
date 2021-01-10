@@ -5,7 +5,8 @@ const Login = () => {
         <main className="client-page">
             <div className="container-content">
                 <header>
-                    <h2>Login </h2>
+                <img src="https://img.icons8.com/ios/50/000000/security-user-male.png" className="myLogo"/>
+                    <h2 className="h2">Login </h2>
                 </header>
 
                 <div className="form-layer">
@@ -39,26 +40,27 @@ const Login = () => {
 
                         <div className="remember-me">
                             <label>
-                                <input type="checkbox" name="" /> Remember&nbsp;&nbsp;Me{" "}
+                                <input type="checkbox" name="" /> &nbsp;&nbsp; Remember&nbsp;&nbsp;Me{" "}
                             </label>
                         </div>
 
                         <div className="link">
                             <a href="">
                                 {" "}
-                                <i className="zmdi zmdi-lock"></i> Password&nbsp;&nbsp;Forgot
+                                <i className="zmdi zmdi-lock"></i> &nbsp;&nbsp;Password&nbsp;&nbsp;Forgot
                             </a>
                             <a href="">
                                 {" "}
-                                <i className="zmdi zmdi-account"></i> Membership
+                                <i className="zmdi zmdi-account"></i> &nbsp;&nbsp;Membership
                                {" "}
                             </a>
                         </div>
-
-                        <button className="btn btn-success">
+                        <div className="myBtn">
                             {" "}
+                        <button className="btn btn-light myBtn2">
                             Login{" "}
                         </button>
+                        </div>
                     </form>
                 </div>
             </div>
