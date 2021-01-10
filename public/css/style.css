@@ -110,6 +110,10 @@ li{
 .myHome{
     font-size: 20px !important;
 }
+.myHeader{
+    display: flex;
+    justify-content: center;
+}
 /********** Transition ************/
 a,
 i,
