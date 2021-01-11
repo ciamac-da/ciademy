@@ -4,51 +4,52 @@ const MainNav = () => {
     return ( 
         <>
                <div className="main-menu">
-                <div className="container">
+                <div className="container myLine">
                     <nav>
                         <span className="responsive-sign">
                             <i className="zmdi zmdi-menu"></i>
                         </span>
                         <ul>
                             <li>
-                                <a href=""> Mobile App Development </a>
-                                <ul>
+                                <a href=""> Mobile-App &nbsp;&nbsp; Development </a>
+                                <ul className="adjList">
                                     <li>
                                         <a href=""> Xamarin </a>
                                     </li>
                                     <li>
-                                        <a href=""> React Native </a>
+                                        <a href=""> React &nbsp;&nbsp; Native </a>
                                     </li>
                                 </ul>
                             </li>
                             <li>
-                                <a href=""> Web Development </a>
+                                <a href=""> Web &nbsp;&nbsp; Development </a>
                                 <ul>
                                     <li>
-                                        <a href=""> Asp.net WebForms </a>
+                                        <a href=""> Asp.net &nbsp;&nbsp; WebForms </a>
                                     </li>
                                     <li>
-                                        <a href=""> Asp.net MVC </a>
+                                        <a href=""> Asp.net &nbsp;&nbsp; MVC </a>
                                     </li>
                                     <li>
-                                        <a href=""> PHP MVC </a>
+                                        <a href=""> PHP &nbsp;&nbsp; MVC </a>
                                     </li>
                                     <li>
-                                        <a href=""> PHP FrameWorks </a>
+                                        <a href=""> PHP &nbsp;&nbsp; FrameWorks </a>
                                     </li>
                                     <li>
-                                        <a href=""> Asp.net Core </a>
+                                        <a href=""> Asp.net &nbsp;&nbsp; Core </a>
                                     </li>
                                 </ul>
                             </li>
                             <li>
-                                <a href=""> Windows Programming </a>
+                                <a href=""> Windows &nbsp;&nbsp; Programming </a>
                             </li>
+
                             <li>
-                                <a href=""> Web Design </a>
+                                <a href=""> Web &nbsp;&nbsp; Design </a>
                                 <ul>
                                     <li>
-                                        <a href=""> Web Design </a>
+                                        <a href=""> Web &nbsp;&nbsp; Design </a>
                                     </li>
                                     <li>
                                         <a href=""> Bootstrap </a>
@@ -71,7 +72,7 @@ const MainNav = () => {
                                 <a href="">SEO </a>
                             </li>
                             <li>
-                                <a href="">Operation System </a>
+                                <a href="">Operation &nbsp;&nbsp; System </a>
                             </li>
                         </ul>
                     </nav>

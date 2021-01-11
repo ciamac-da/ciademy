@@ -48,11 +48,14 @@ const Login = () => {
                         <div className="link">
                             <a href="">
                                 {" "}
-                                <i className="zmdi zmdi-lock"></i> &nbsp;&nbsp;Password&nbsp;&nbsp;Forgot
+                                <img src="https://img.icons8.com/ios-filled/24/000000/sign-in-form-password.png"/>
+                                &nbsp;&nbsp;Password&nbsp;&nbsp;Forgot
                             </a>
                             <NavLink to="/register">
                                 {" "}
-                                <i className="zmdi zmdi-account"></i> &nbsp;&nbsp;Register
+                                <img src="https://img.icons8.com/material-sharp/24/000000/login-rounded-right.png"/>
+                                
+                                 &nbsp;&nbsp;Register
                                {" "}
                             </NavLink>
                         </div>

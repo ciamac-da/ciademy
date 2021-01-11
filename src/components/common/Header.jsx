@@ -16,6 +16,7 @@ const Header = () => {
                     <div className="search-form">
                         <form>
                             <input
+                                className="myInput"
                                 type="text"
                                 name=""
                                 placeholder="What do you want to Learn?"

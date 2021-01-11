@@ -8,9 +8,9 @@ const TopNav = () => {
                             <div className="col-sm-6 col-xs-12 myhead">
                                 <ul>
                                     <li>
-                                        <NavLink to="" exact className="myHome"> Home </NavLink>
-                                        <a href="" className="myHome"> About us </a>
-                                        <a href="" className="myHome"> Contact us </a>
+                                        <NavLink to="" exact className="myHome"     activeStyle={{color:"green", fontSize:"30px !important", textShadow: "1px 1px 1px green" }}> Home </NavLink>
+                                        <NavLink to="/aboutus" className="myHome"   activeStyle={{color:"green", fontSize:"30px !important", textShadow: "1px 1px 1px green" }}> About &nbsp; us </NavLink>
+                                        <NavLink to="/contactus" className="myHome" activeStyle={{color:"green", fontSize:"30px !important", textShadow: "1px 1px 1px green" }}> Contact &nbsp; us </NavLink>
                                     </li>
                                 </ul>
                             </div>
@@ -21,11 +21,11 @@ const TopNav = () => {
                                         &nbsp;
                                         &nbsp;
                                         &nbsp;
-                                        <NavLink to="/login"  activeStyle={{color:"green", fontSize:"30px"}}> Login</NavLink> 
+                                        <NavLink to="/login" className="Login"  activeStyle={{color:"green", fontSize:"30px !important", textShadow: "1px 1px 1px green"}}> Login</NavLink> 
                                         &nbsp;
                                         /
                                         &nbsp;
-                                        <NavLink to="/register" activeStyle={{color:"green", fontSize:"30px"}}> Register </NavLink>
+                                        <NavLink to="/register" className="Login" activeStyle={{color:"green", fontSize:"30px", textShadow: "1px 1px 1px green"}}> Register </NavLink>
                                     </div>
                                 </div>
                             </div>

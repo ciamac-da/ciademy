@@ -109,10 +109,30 @@ li{
 }
 .myHome{
     font-size: 20px !important;
+
 }
 .myHeader{
     display: flex;
     justify-content: center;
+}
+.myLine{
+    display: flex;
+    justify-content: space-around;
+}
+a{
+    font-size: 20px !important;
+}
+.myInput{
+    font-size: 18px !important;
+    
+}
+.adjList{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.Login{
+    text-shadow: 1px 1px 1px white;
 }
 /********** Transition ************/
 a,

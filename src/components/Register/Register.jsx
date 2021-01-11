@@ -70,14 +70,15 @@ const Register = () => {
                         <div className="link">
                             <a href="">
                                 {" "}
-                                <i className="zmdi zmdi-assignment"></i>
+                                <img src="https://img.icons8.com/ios-glyphs/24/000000/terms-and-conditions.png"/>
                                 &nbsp;&nbsp;Terms 
                                 &nbsp;&nbsp;and 
                                 &nbsp;&nbsp;Conditions
                             </a>
                             <NavLink to="/login">
                                 {" "}
-                                <i className="zmdi zmdi-account"></i> 
+                                <img src="https://img.icons8.com/material-sharp/24/000000/login-rounded-right.png"/>
+                                
                                 &nbsp;&nbsp;Login
                                 {" "}
                             </NavLink>
