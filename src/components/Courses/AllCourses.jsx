@@ -8,9 +8,9 @@ const AllCourses = () => {
                 <header className="myHeader">
                     <h1>
                         {" "}
-                        <span> Web Development Courses  </span>{" "}
+                        <span> Web Development &nbsp; Courses  </span>{" "}
                     </h1>{" "}
-                    <span> Courses 1 2 3 </span>
+                    <span> Courses &nbsp; 1 2 3 </span>
                 </header>
 
                 <div className="row">
@@ -47,7 +47,7 @@ const AllCourses = () => {
                                 <input
                                     type="text"
                                     name=""
-                                    placeholder="موضوع مورد نظر ..."
+                                    placeholder="Topic..."
                                 />
                                 <button>
                                     <i className="zmdi zmdi-search"></i>
@@ -81,10 +81,14 @@ const AllCourses = () => {
                             <ul>
                                 <li>
                                     <input type="checkbox" name="" id="cat-1" />
+                                    &nbsp;
+                                    &nbsp;
                                     <label for="cat-1"> Mobile App Development </label>
                                 </li>
                                 <li>
                                     <input type="checkbox" name="" id="cat-2" />
+                                    &nbsp;
+                                    &nbsp;
                                     <label for="cat-2">
                                         {" "}
                                     Windows Programming{" "}
@@ -92,10 +96,14 @@ const AllCourses = () => {
                                 </li>
                                 <li>
                                     <input type="checkbox" name="" id="cat-3" />
+                                    &nbsp;
+                                    &nbsp;
                                     <label for="cat-3"> Web Development </label>
                                 </li>
                                 <li>
                                     <input type="checkbox" name="" id="cat-4" />
+                                    &nbsp;
+                                    &nbsp;
                                     <label for="cat-4">
                                         {" "}
                                         Web Design
@@ -104,10 +112,14 @@ const AllCourses = () => {
                                 </li>
                                 <li>
                                     <input type="checkbox" name="" id="cat-5" />
+                                    &nbsp;
+                                    &nbsp;
                                     <label for="cat-5"> Database </label>
                                 </li>
                                 <li>
                                     <input type="checkbox" name="" id="cat-6" />
+                                    &nbsp;
+                                    &nbsp;
                                     <label for="cat-6">
                                         {" "}
                                         SEO
@@ -116,6 +128,8 @@ const AllCourses = () => {
                                 </li>
                                 <li>
                                     <input type="checkbox" name="" id="cat-7" />
+                                    &nbsp;
+                                    &nbsp;
                                     <label for="cat-7"> 
                                     Operation System                                    
                                      </label>
@@ -149,7 +163,7 @@ const AllCourses = () => {
                Material UI{" "}
                </a>
            </h2>
-           <span>Free </span>
+           <span className="myPrice">Free </span>
        </article>
    </div>
 
@@ -176,7 +190,7 @@ const AllCourses = () => {
                ReactJs{" "}
                </a>
            </h2>
-           <span> 299$ USD  </span>
+           <span className="myPrice"> 299 $ </span>
        </article>
    </div>
 
@@ -202,7 +216,7 @@ const AllCourses = () => {
                   React Native{" "}
                </a>
            </h2>
-           <span> 149$ USD  </span>
+           <span className="myPrice"> 149 $  </span>
        </article>
    </div>
 
@@ -228,7 +242,7 @@ const AllCourses = () => {
                    JavaScript{" "}
                </a>
            </h2>
-           <span> 199$ USD </span>
+           <span className="myPrice"> 199 $</span>
        </article>
    </div>
 
@@ -254,7 +268,7 @@ const AllCourses = () => {
                   Typesript{" "}
                </a>
            </h2>
-           <span> 149$ USD  </span>
+           <span className="myPrice"> 149 $ </span>
        </article>
    </div>
    
@@ -280,7 +294,7 @@ const AllCourses = () => {
                   MongoDB{" "}
                </a>
            </h2>
-           <span> 149$ USD  </span>
+           <span className="myPrice"> 149 $ </span>
        </article>
    </div>
 
@@ -306,7 +320,7 @@ const AllCourses = () => {
                    NodeJs{" "}
                </a>
            </h2>
-           <span> 199$ USD </span>
+           <span className="myPrice"> 199 $</span>
        </article>
    </div>
 
@@ -332,7 +346,7 @@ const AllCourses = () => {
                    Bootstrap{" "}
                </a>
            </h2>
-           <span> Free</span>
+           <span className="myPrice"> Free</span>
        </article>
    </div>
 
@@ -358,7 +372,7 @@ const AllCourses = () => {
                    HTML/CSS{" "}
                </a>
            </h2>
-           <span> Free </span>
+           <span className="myPrice"> Free </span>
        </article>
    </div>
 
@@ -384,7 +398,7 @@ const AllCourses = () => {
                    MERN{" "}
                </a>
            </h2>
-           <span> 399$ USD  </span>
+           <span className="myPrice"> 399 $ </span>
        </article>
    </div>
 
@@ -410,7 +424,7 @@ const AllCourses = () => {
                    Python{" "}
                </a>
            </h2>
-           <span> 199$ USD </span>
+           <span className="myPrice"> 199 $ </span>
        </article>
    </div>
 
@@ -436,7 +450,7 @@ const AllCourses = () => {
                    VueJs{" "}
                </a>
            </h2>
-           <span> 199$ USD </span>
+           <span className="myPrice"> 199 $</span>
        </article>
    </div>
 
@@ -462,7 +476,7 @@ const AllCourses = () => {
                    Angular{" "}
                </a>
            </h2>
-           <span> 199$ USD </span>
+           <span className="myPrice"> 199 $</span>
        </article>
    </div>
 
@@ -488,7 +502,7 @@ const AllCourses = () => {
                    C++{" "}
                </a>
            </h2>
-           <span> 199$ USD </span>
+           <span className="myPrice"> 199 $</span>
        </article>
    </div>
 
@@ -514,7 +528,7 @@ const AllCourses = () => {
                   ASP.NET{" "}
                </a>
            </h2>
-           <span> 149$ USD  </span>
+           <span className="myPrice"> 149 $ </span>
        </article>
    </div>
 
@@ -540,7 +554,7 @@ const AllCourses = () => {
                    Java{" "}
                </a>
            </h2>
-           <span> 199$ USD </span>
+           <span className="myPrice"> 199 $</span>
        </article>
    </div>
   
@@ -566,21 +580,21 @@ const AllCourses = () => {
                    C#{" "}
                </a>
            </h2>
-           <span> 199$ USD </span>
+           <span className="myPrice"> 199 $</span>
        </article>
    </div>
 
    
    <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12 term-col"
-  /*
-  ....##.....##....###....##.....##....###....########..####.##....##
-  .....##...##....##.##...###...###...##.##...##.....##..##..###...##
-  ......##.##....##...##..####.####..##...##..##.....##..##..####..##
-  .......###....##.....##.##.###.##.##.....##.########...##..##.##.##
-  ......##.##...#########.##.....##.#########.##...##....##..##..####
-  .....##...##..##.....##.##.....##.##.....##.##....##...##..##...###
-  ....##.....##.##.....##.##.....##.##.....##.##.....##.####.##....##
-  */
+ /*
+ ....##.....##....###....##.....##....###....########..####.##....##
+ .....##...##....##.##...###...###...##.##...##.....##..##..###...##
+ ......##.##....##...##..####.####..##...##..##.....##..##..####..##
+ .......###....##.....##.##.###.##.##.....##.########...##..##.##.##
+ ......##.##...#########.##.....##.#########.##...##....##..##..####
+ .....##...##..##.....##.##.....##.##.....##.##....##...##..##...###
+ ....##.....##.##.....##.##.....##.##.....##.##.....##.####.##....##
+ */
    >
        <article>
            <a href="" className="img-layer">
@@ -592,7 +606,7 @@ const AllCourses = () => {
                   Xamarin{" "}
                </a>
            </h2>
-           <span> 149$ USD  </span>
+           <span className="myPrice"> 149 $ </span>
        </article>
    </div>
 
@@ -618,7 +632,7 @@ const AllCourses = () => {
                    PHP{" "}
                </a>
            </h2>
-           <span> 199$ USD </span>
+           <span className="myPrice"> 199 $</span>
        </article>
    </div>
 
@@ -644,7 +658,7 @@ const AllCourses = () => {
                    Docker{" "}
                </a>
            </h2>
-           <span> 99$ USD </span>
+           <span className="myPrice"> 99 $  </span>
        </article>
    </div>
                         </div>
