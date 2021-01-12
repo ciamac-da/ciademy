@@ -34,7 +34,7 @@ const Courses = () => {
                                         Material UI{" "}
                                         </a>
                                     </h2>
-                                    <span>Free </span>
+                                    <span className="myPrice">Free </span>
                                 </article>
                             </div>
 
@@ -60,7 +60,7 @@ const Courses = () => {
                                         ReactJs{" "}
                                         </a>
                                     </h2>
-                                    <span> 299$ USD  </span>
+                                    <span className="myPrice"> 299 $ </span>
                                 </article>
                             </div>
 
@@ -86,7 +86,7 @@ const Courses = () => {
                                            React Native{" "}
                                         </a>
                                     </h2>
-                                    <span> 149$ USD  </span>
+                                    <span className="myPrice"> 149 $ </span>
                                 </article>
                             </div>
 
@@ -112,7 +112,7 @@ const Courses = () => {
                                             JavaScript{" "}
                                         </a>
                                     </h2>
-                                    <span> 199$ USD </span>
+                                    <span className="myPrice"> 199 $</span>
                                 </article>
                             </div>
 
@@ -138,7 +138,7 @@ const Courses = () => {
                                            Typesript{" "}
                                         </a>
                                     </h2>
-                                    <span> 149$ USD  </span>
+                                    <span className="myPrice"> 149 $ </span>
                                 </article>
                             </div>
                             
@@ -164,7 +164,7 @@ const Courses = () => {
                                            MongoDB{" "}
                                         </a>
                                     </h2>
-                                    <span> 149$ USD  </span>
+                                    <span className="myPrice"> 149 $  </span>
                                 </article>
                             </div>
 
@@ -215,7 +215,7 @@ const Courses = () => {
                                             MERN{" "}
                                         </a>
                                     </h2>
-                                    <span> 399$ USD  </span>
+                                    <span className="myPrice"> 399 $ </span>
                                 </article>
                             </div>
 
