@@ -25,11 +25,11 @@ const Courses = () => {
                          */
                           >
                                 <article>
-                                    <a href="" className="img-layer cardImage">
+                                    <a src="" className="img-layer cardImage">
                                         <img src="images/pic/mat.png" />
                                     </a>
                                     <h2>
-                                        <a href="">
+                                        <a target="_blank" href="https://www.udemy.com/course/implement-high-fidelity-designs-with-material-ui-and-reactjs/">
                                             {" "}
                                         Material UI{" "}
                                         </a>
@@ -52,10 +52,10 @@ const Courses = () => {
                             >
                                 <article>
                                     <a href="" className="img-layer">
-                                        <img src="images/pic/reactjs.png" />
+                                        <img  src="images/pic/reactjs.png" />
                                     </a>
                                     <h2>
-                                        <a href="">
+                                        <a target="_blank" href="https://www.udemy.com/course/react-the-complete-guide-incl-redux/">
                                             {" "}
                                         ReactJs{" "}
                                         </a>
@@ -81,7 +81,7 @@ const Courses = () => {
                                         <img src="images/pic/reactn.jpeg" />
                                     </a>
                                     <h2>
-                                        <a href="">
+                                        <a target="_blank" href="https://www.udemy.com/course/the-complete-react-native-and-redux-course/">
                                             {" "}
                                            React Native{" "}
                                         </a>
@@ -107,7 +107,7 @@ const Courses = () => {
                                         <img src="images/pic/JS.jpeg" />
                                     </a>
                                     <h2>
-                                        <a href="">
+                                        <a target="_blank" href="https://www.udemy.com/course/the-complete-javascript-course/">
                                             {" "}
                                             JavaScript{" "}
                                         </a>
@@ -133,7 +133,7 @@ const Courses = () => {
                                         <img src="images/pic/ttt.jpg" />
                                     </a>
                                     <h2>
-                                        <a href="">
+                                        <a target="_blank" href="https://www.udemy.com/course/understanding-typescript/">
                                             {" "}
                                            Typesript{" "}
                                         </a>
@@ -159,7 +159,7 @@ const Courses = () => {
                                         <img src="images/pic/mongodb.jpg" />
                                     </a>
                                     <h2>
-                                        <a href="">
+                                        <a target="_blank"  href="https://www.udemy.com/course/mongodb-the-complete-developers-guide/">
                                             {" "}
                                            MongoDB{" "}
                                         </a>
@@ -185,7 +185,7 @@ const Courses = () => {
                                         <img src="images/pic/nodejs.png" />
                                     </a>
                                     <h2>
-                                        <a href="">
+                                        <a target="_blank"  href="https://www.udemy.com/course/nodejs-the-complete-guide/">
                                             {" "}
                                             NodeJs{" "}
                                         </a>
@@ -210,7 +210,7 @@ const Courses = () => {
                                         <img src="images/pic/mern.jpg" />
                                     </a>
                                     <h2>
-                                        <a href="">
+                                        <a arget="_blank" href="https://www.udemy.com/course/mern-stack-front-to-back/">
                                             {" "}
                                             MERN{" "}
                                         </a>

@@ -144,7 +144,7 @@ const AllCourses = () => {
                <img src="images/pic/mat.png" />
            </a>
            <h2>
-               <a href="">
+           <a target="_blank" href="https://www.udemy.com/course/implement-high-fidelity-designs-with-material-ui-and-reactjs/">
                    {" "}
                Material UI{" "}
                </a>
@@ -170,7 +170,8 @@ const AllCourses = () => {
                <img src="images/pic/reactjs.png" />
            </a>
            <h2>
-               <a href="">
+           <a target="_blank" href="https://www.udemy.com/course/react-the-complete-guide-incl-redux/">
+               
                    {" "}
                ReactJs{" "}
                </a>
@@ -196,7 +197,7 @@ const AllCourses = () => {
                <img src="images/pic/reactn.jpeg" />
            </a>
            <h2>
-               <a href="">
+           <a target="_blank" href="https://www.udemy.com/course/the-complete-react-native-and-redux-course/">
                    {" "}
                   React Native{" "}
                </a>
@@ -222,7 +223,7 @@ const AllCourses = () => {
                <img src="images/pic/JS.jpeg" />
            </a>
            <h2>
-               <a href="">
+           <a target="_blank" href="https://www.udemy.com/course/the-complete-javascript-course/">
                    {" "}
                    JavaScript{" "}
                </a>
@@ -248,7 +249,7 @@ const AllCourses = () => {
                <img src="images/pic/ttt.jpg" />
            </a>
            <h2>
-               <a href="">
+           <a target="_blank" href="https://www.udemy.com/course/understanding-typescript/">
                    {" "}
                   Typesript{" "}
                </a>
@@ -274,7 +275,7 @@ const AllCourses = () => {
                <img src="images/pic/mongodb.jpg" />
            </a>
            <h2>
-               <a href="">
+           <a target="_blank"  href="https://www.udemy.com/course/mongodb-the-complete-developers-guide/">
                    {" "}
                   MongoDB{" "}
                </a>
@@ -300,7 +301,7 @@ const AllCourses = () => {
                <img src="images/pic/nodejs.png" />
            </a>
            <h2>
-               <a href="">
+           <a target="_blank"  href="https://www.udemy.com/course/nodejs-the-complete-guide/">
                    {" "}
                    NodeJs{" "}
                </a>
@@ -326,7 +327,7 @@ const AllCourses = () => {
                <img src="images/pic/boostrap_img.png" />
            </a>
            <h2>
-               <a href="">
+               <a target="_blank" href="https://www.udemy.com/course/bootstrap-4-from-scratch-with-5-projects/">
                    {" "}
                    Bootstrap{" "}
                </a>
@@ -352,7 +353,7 @@ const AllCourses = () => {
                <img src="images/pic/HTMLCSS.jpg" />
            </a>
            <h2>
-               <a href="">
+               <a target="_blank" href="https://www.udemy.com/course/design-and-develop-a-killer-website-with-html5-and-css3/">
                    {" "}
                    HTML/CSS{" "}
                </a>
@@ -378,7 +379,7 @@ const AllCourses = () => {
                <img src="images/pic/mern.jpg" />
            </a>
            <h2>
-               <a href="">
+           <a arget="_blank" href="https://www.udemy.com/course/mern-stack-front-to-back/">
                    {" "}
                    MERN{" "}
                </a>
@@ -404,7 +405,7 @@ const AllCourses = () => {
                <img src="images/pic/py.jpg" />
            </a>
            <h2>
-               <a href="">
+               <a target="_blank" href="https://www.udemy.com/course/python-the-complete-python-developer-course/">
                    {" "}
                    Python{" "}
                </a>
@@ -430,7 +431,7 @@ const AllCourses = () => {
                <img src="images/pic/vuejs.png" />
            </a>
            <h2>
-               <a href="">
+               <a target="_blank" href="https://www.udemy.com/course/vuejs-2-the-complete-guide/">
                    {" "}
                    VueJs{" "}
                </a>
@@ -456,7 +457,7 @@ const AllCourses = () => {
                <img src="images/pic/Angular.png" />
            </a>
            <h2>
-               <a href="">
+               <a target="_blank" href="https://www.udemy.com/course/the-complete-guide-to-angular-2/">
                    {" "}
                    Angular{" "}
                </a>
@@ -482,7 +483,7 @@ const AllCourses = () => {
                <img src="images/pic/cpp.jpg" />
            </a>
            <h2>
-               <a href="">
+               <a target="_blank" href="https://www.udemy.com/course/unrealcourse/">
                    {" "}
                    C++{" "}
                </a>
@@ -508,7 +509,7 @@ const AllCourses = () => {
                <img src="images/pic/ASP-NET.png" />
            </a>
            <h2>
-               <a href="">
+               <a target="_blank" href="https://www.udemy.com/course/the-complete-aspnet-mvc-5-course/">
                    {" "}
                   ASP.NET{" "}
                </a>
@@ -534,7 +535,7 @@ const AllCourses = () => {
                <img src="images/pic/java.jpg" />
            </a>
            <h2>
-               <a href="">
+               <a target="_blank" href="https://www.udemy.com/course/java-the-complete-java-developer-course/">
                    {" "}
                    Java{" "}
                </a>
@@ -560,7 +561,7 @@ const AllCourses = () => {
                <img src="images/pic/csharp.jpg" />
            </a>
            <h2>
-               <a href="">
+               <a  target="_blank" href="https://www.udemy.com/course/csharp-tutorial-for-beginners/">
                    {" "}
                    C#{" "}
                </a>
@@ -586,7 +587,7 @@ const AllCourses = () => {
                <img src="images/pic/xamarin.jpg" />
            </a>
            <h2>
-               <a href="">
+               <a target="_blank" href="https://www.udemy.com/course/xamarin-forms-course/">
                    {" "}
                   Xamarin{" "}
                </a>
@@ -612,7 +613,7 @@ const AllCourses = () => {
                <img src="images/pic/php.png" />
            </a>
            <h2>
-               <a href="">
+               <a target="_blank" href="https://www.udemy.com/course/php-for-complete-beginners-includes-msql-object-oriented/">
                    {" "}
                    PHP{" "}
                </a>
@@ -638,7 +639,7 @@ const AllCourses = () => {
                <img src="images/pic/docker.png" />
            </a>
            <h2>
-               <a href="">
+               <a target="_blank" href="https://www.udemy.com/course/docker-mastery/">
                    {" "}
                    Docker{" "}
                </a>
@@ -651,11 +652,7 @@ const AllCourses = () => {
                         <nav aria-label="Page navigation">
                             <ul className="pagination justify-content-center">
                                 <li className="page-item">
-                                    <a
-                                        className="page-link"
-                                        href="#"
-                                        aria-label="Previous"
-                                    >
+                                    <a className="page-link" href="#" aria-label="Previous">
                                         <span aria-hidden="true">
                                             <i className="zmdi zmdi-chevron-right"></i>
                                         </span>
