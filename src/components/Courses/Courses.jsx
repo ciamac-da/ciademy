@@ -219,7 +219,6 @@ const Courses = () => {
                                 </article>
                             </div>
 
-
                            
                         </div>
                     </section>

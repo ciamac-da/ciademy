@@ -1,7 +1,13 @@
-import React from "react";
+import React, {useState} from "react";
 import { NavLink } from 'react-router-dom';
 
 const Register = () => {
+
+const[fullname, setFullname]= useState("");
+const[email, setEmail]= useState("");
+const[password, setPassword]= useState("");
+
+
     return (
         <>
         <main className="client-page">
