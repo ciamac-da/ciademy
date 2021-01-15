@@ -47,6 +47,9 @@ const handleSubmit = event =>{
                                 aria-describedby="username"
                                 value={fullname}
                                 onChange={e=>setFullname(e.target.value)}
+                                autoComplete="off"
+                                required
+
                             />
                         </div>
 
@@ -64,6 +67,9 @@ const handleSubmit = event =>{
                                 aria-describedby="email-address"
                                 value={email}
                                 onChange={e=>setEmail(e.target.value)}
+                                autoComplete="off"
+                                required
+
                             />
                         </div>
 
@@ -77,7 +83,10 @@ const handleSubmit = event =>{
                                 placeholder="Password"
                                 aria-describedby="password"
                                 value={password}
-                                onChange={e=>setPassword(e.target.value)}
+                                onChange={ e=>setPassword(e.target.value) }
+                                autoComplete="off"
+                                required
+
                             />
                         </div>
 
