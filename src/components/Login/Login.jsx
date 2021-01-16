@@ -1,11 +1,12 @@
 import React, {useState} from "react";
-import { NavLink } from 'react-router-dom';
+import { NavLink, withRouter, Redirect } from 'react-router-dom';
 import { loginUser } from '../../sevices/userService';
 import { toast } from 'react-toastify';
-const Login = () => {
+const Login = ({history}) => {
 
 const [email, setEmail]= useState("");
 const [password, setPassword]= useState("");
+
 
 const reset = () =>{
     setEmail("");
@@ -25,6 +26,7 @@ if(status === 200){
     });
     console.log(data)
     localStorage.setItem("token", data.token)
+    history.replace("/");
     reset();
 }
 } catch(err){
@@ -112,4 +114,4 @@ console.log(err);
     );
 };
 
-export default Login;
+export default withRouter(Login);
