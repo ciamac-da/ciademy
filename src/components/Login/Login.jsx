@@ -1,7 +1,37 @@
-import React from "react";
+import React, {useState} from "react";
 import { NavLink } from 'react-router-dom';
-
+import { loginUser } from '../../sevices/userService';
+import { toast } from 'react-toastify';
 const Login = () => {
+
+const [email, setEmail]= useState("");
+const [password, setPassword]= useState("");
+
+const reset = () =>{
+    setEmail("");
+    setPassword("");
+}
+const handleSubmit = async event =>{
+    event.preventDefault();
+
+    const user ={email, password}
+
+try{
+const {status,data} = await loginUser(user)
+if(status === 200){
+    toast.success("User logged in successfully!", {
+        position:"bottom-right", 
+        closeOnClick: true
+    });
+    console.log(data)
+    reset();
+}
+} catch(err){
+console.log(err);
+}
+
+}
+
     return (
         <main className="client-page">
             <div className="container-content">
@@ -11,7 +41,7 @@ const Login = () => {
                 </header>
 
                 <div className="form-layer">
-                    <form action="" method="">
+                    <form onSubmit={handleSubmit}>
                         <div className="input-group">
                             <span
                                 className="input-group-addon"
@@ -24,6 +54,11 @@ const Login = () => {
                                 className="form-control"
                                 placeholder="Email Address"
                                 aria-describedby="email-address"
+                                value={email}
+                                onChange={e=> setEmail(e.target.value)}
+                                autoComplete="off"
+                                required
+
                             />
                         </div>
 
@@ -36,6 +71,10 @@ const Login = () => {
                                 className="form-control"
                                 placeholder="Password "
                                 aria-describedby="password"
+                                value={password}
+                                onChange={e=> setPassword(e.target.value)}
+                                autoComplete="off"
+                                required
                             />
                         </div>
 
