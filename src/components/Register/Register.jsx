@@ -1,5 +1,7 @@
 import React, {useState} from "react";
+import axios from "axios";
 import { NavLink } from 'react-router-dom';
+import { toast, ToastContainer } from "react-toastify";
 
 const Register = () => {
 
@@ -22,8 +24,31 @@ const handleSubmit = event =>{
         email,
         password
     };
-    console.log(user);
-    reset()
+    
+    axios.post("https://toplearnapi.ghorbany.dev/api/register",
+    JSON.stringify(user),
+    {
+        headers:{
+            "Content-Type":"application/json"
+        }
+    }
+    )
+    .then(({data, status})=>{
+        if(status === 201){ 
+            toast.success("New User is registered successfully!", {position:"bottom-left", closeOnClick: true}) 
+            console.log(data)
+            reset();
+       }else if(status === 422){
+           console.log("This user is already exists!")
+       }
+    })
+    .catch(err=>{
+        toast.error("Something is wrong!",{position:"top-center", closeOnClick:true})
+        console.log(err)
+    }
+        )
+
+
 };
 
     return (
