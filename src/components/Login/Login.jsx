@@ -24,6 +24,7 @@ if(status === 200){
         closeOnClick: true
     });
     console.log(data)
+    localStorage.setItem("token", data.token)
     reset();
 }
 } catch(err){
