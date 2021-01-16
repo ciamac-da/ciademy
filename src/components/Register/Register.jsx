@@ -16,7 +16,7 @@ const reset = () =>{
     setPassword("");
 }
 
-const handleSubmit = event =>{
+const handleSubmit = async event =>{
     event.preventDefault();
     //alert("Submitted!")
     const user ={
@@ -25,9 +25,30 @@ const handleSubmit = event =>{
         password
     };
     
+  try {
+      const {status} = await registerUser(user)
   
-    registerUser(user)
-      .then(({data, status})=>{
+      if(status === 201){ 
+          toast.success("New User is registered successfully!", {
+              position:"bottom-right", 
+              closeOnClick: true
+          });
+          reset();
+     }
+
+  } 
+  catch(err) {
+    toast.error("This user is already exists! Please Login",{
+        position:"bottom-right",
+        closeOnClick:true
+    });
+    console.log(err)
+    reset();
+  }
+
+
+
+  /*     .then(({data, status})=>{
         if(status === 201){ 
             toast.success("New User is registered successfully!", {
                 position:"bottom-right", 
@@ -35,7 +56,8 @@ const handleSubmit = event =>{
             });
             console.log(data)
             reset();
-       }else if(status === 422){
+       }
+       else if(status === 422){
            toast.info("This user is already exists!",{
             position:"bottom-right", 
             closeOnClick: true
@@ -53,7 +75,7 @@ const handleSubmit = event =>{
         reset();
 
     });
-console.log(user)
+console.log(user) */
 
 };
 
