@@ -35,19 +35,31 @@ const handleSubmit = event =>{
     )
     .then(({data, status})=>{
         if(status === 201){ 
-            toast.success("New User is registered successfully!", {position:"bottom-left", closeOnClick: true}) 
+            toast.success("New User is registered successfully!", {
+                position:"bottom-right", 
+                closeOnClick: true
+            });
             console.log(data)
             reset();
        }else if(status === 422){
-           console.log("This user is already exists!")
+           toast.info("This user is already exists!",{
+            position:"bottom-right", 
+            closeOnClick: true
+           })
+           console.log("user already exist")
+           reset();
        }
     })
     .catch(err=>{
-        toast.error("Something is wrong!",{position:"top-center", closeOnClick:true})
+        toast.error("Something is wrong, try again!",{
+            position:"bottom-right",
+            closeOnClick:true
+        });
         console.log(err)
-    }
-        )
+        reset();
 
+    });
+console.log(user)
 
 };
 
