@@ -1,7 +1,7 @@
 import React, {useState} from "react";
-import axios from "axios";
 import { NavLink } from 'react-router-dom';
-import { toast, ToastContainer } from "react-toastify";
+import { toast } from "react-toastify";
+import { registerUser } from '../../sevices/userService';
 
 const Register = () => {
 
@@ -25,15 +25,9 @@ const handleSubmit = event =>{
         password
     };
     
-    axios.post("https://toplearnapi.ghorbany.dev/api/register",
-    JSON.stringify(user),
-    {
-        headers:{
-            "Content-Type":"application/json"
-        }
-    }
-    )
-    .then(({data, status})=>{
+  
+    registerUser(user)
+      .then(({data, status})=>{
         if(status === 201){ 
             toast.success("New User is registered successfully!", {
                 position:"bottom-right", 
