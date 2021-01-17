@@ -1,14 +1,25 @@
-import React, {useState} from "react";
+import React, {useState, useRef} from "react";
+import simpleValidator from "simple-react-validator";
 import { NavLink } from 'react-router-dom';
 import { toast } from "react-toastify";
 import { registerUser } from '../../sevices/userService';
 
 const Register = () => {
 
-const[fullname, setFullname]= useState("");
-const[email, setEmail]= useState("");
-const[password, setPassword]= useState("");
+const[fullname ,  setFullname] = useState("");
+const[email    ,  setEmail   ] = useState("");
+const[password ,  setPassword] = useState("");
+const[         ,  forceUpdate] = useState();
 
+
+const validator = useRef(new simpleValidator(
+    {
+        messages:{
+            required:"Please fill out this field!"
+        },
+        element: message => <div style={{color:"red"}}>{message}</div>
+    }
+));
 
 const reset = () =>{
     setFullname("");
@@ -26,19 +37,23 @@ const handleSubmit = async event =>{
     };
     
   try {
-      const {status} = await registerUser(user)
-  
-      if(status === 201){ 
-          toast.success("New User is registered successfully!", {
-              position:"bottom-right", 
-              closeOnClick: true
-          });
-          reset();
+     if(validator.current.allValid()){
+        const {status} = await registerUser(user)
+        if(status === 201){ 
+            toast.success("New User is registered successfully!", {
+                position:"bottom-right", 
+                closeOnClick: true
+            });
+            reset();
+       }
+     } else{
+         validator.current.showMessages();
+         // to render again I putted 1
+         forceUpdate(1)
      }
 
-  } 
-  catch(err) {
-    toast.error("This user is already exists! Please Login",{
+  } catch(err) {
+    toast.error("Something is wrong",{
         position:"bottom-right",
         closeOnClick:true
     });
@@ -96,15 +111,23 @@ console.log(user) */
                             <input
                                 type="text"
                                 className="form-control"
-                                placeholder="Name"
+                                placeholder="Fullname"
+                                name="fullname"
                                 aria-describedby="username"
                                 value={fullname}
-                                onChange={e=>setFullname(e.target.value)}
+                                onChange={e=>{
+                                setFullname(e.target.value);
+                                validator.current.showMessageFor("fullname")
+                                }}
                                 autoComplete="off"
-                                required
-
+                                //required
                             />
                         </div>
+                            {validator.current.message(
+                                "fullname", 
+                                fullname,
+                                "required|min:6" 
+                                )}
 
                         <div className="input-group">
                             <span
