@@ -8,9 +8,9 @@ const AllCourses = () => {
                 <header className="myHeader">
                     <h1>
                         {" "}
-                        <span> Web Development &nbsp; Courses  </span>{" "}
+                        <span> Web Development  Courses  </span>{" "}
                     </h1>{" "}
-                    <span> Courses &nbsp; 1 2 3 </span>
+                    <span> Courses  1 2 3 </span>
                 </header>
 
                 <div className="row">
@@ -81,14 +81,14 @@ const AllCourses = () => {
                             <ul>
                                 <li>
                                     <input type="checkbox" name="" id="cat-1" />
-                                    &nbsp;
-                                    &nbsp;
+                                    
+                                    
                                     <label for="cat-1"> Mobile App Development </label>
                                 </li>
                                 <li>
                                     <input type="checkbox" name="" id="cat-2" />
-                                    &nbsp;
-                                    &nbsp;
+                                    
+                                    
                                     <label for="cat-2">
                                         {" "}
                                     Windows Programming{" "}
@@ -96,14 +96,14 @@ const AllCourses = () => {
                                 </li>
                                 <li>
                                     <input type="checkbox" name="" id="cat-3" />
-                                    &nbsp;
-                                    &nbsp;
+                                    
+                                    
                                     <label for="cat-3"> Web Development </label>
                                 </li>
                                 <li>
                                     <input type="checkbox" name="" id="cat-4" />
-                                    &nbsp;
-                                    &nbsp;
+                                    
+                                    
                                     <label for="cat-4">
                                         {" "}
                                         Web Design
@@ -112,14 +112,14 @@ const AllCourses = () => {
                                 </li>
                                 <li>
                                     <input type="checkbox" name="" id="cat-5" />
-                                    &nbsp;
-                                    &nbsp;
+                                    
+                                    
                                     <label for="cat-5"> Database </label>
                                 </li>
                                 <li>
                                     <input type="checkbox" name="" id="cat-6" />
-                                    &nbsp;
-                                    &nbsp;
+                                    
+                                    
                                     <label for="cat-6">
                                         {" "}
                                         SEO
@@ -128,8 +128,8 @@ const AllCourses = () => {
                                 </li>
                                 <li>
                                     <input type="checkbox" name="" id="cat-7" />
-                                    &nbsp;
-                                    &nbsp;
+                                    
+                                    
                                     <label for="cat-7"> 
                                     Operation System                                    
                                      </label>

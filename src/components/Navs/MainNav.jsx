@@ -11,45 +11,45 @@ const MainNav = () => {
                         </span>
                         <ul>
                             <li>
-                                <a href=""> Mobile-App &nbsp;&nbsp; Development </a>
+                                <a href=""> Mobile-App  Development </a>
                                 <ul className="adjList">
                                     <li>
                                         <a href=""> Xamarin </a>
                                     </li>
                                     <li>
-                                        <a href=""> React &nbsp;&nbsp; Native </a>
+                                        <a href=""> React  Native </a>
                                     </li>
                                 </ul>
                             </li>
                             <li>
-                                <a href=""> Web &nbsp;&nbsp; Development </a>
+                                <a href=""> Web  Development </a>
                                 <ul>
                                     <li>
-                                        <a href=""> Asp.net &nbsp;&nbsp; WebForms </a>
+                                        <a href=""> Asp.net  WebForms </a>
                                     </li>
                                     <li>
-                                        <a href=""> Asp.net &nbsp;&nbsp; MVC </a>
+                                        <a href=""> Asp.net  MVC </a>
                                     </li>
                                     <li>
-                                        <a href=""> PHP &nbsp;&nbsp; MVC </a>
+                                        <a href=""> PHP  MVC </a>
                                     </li>
                                     <li>
-                                        <a href=""> PHP &nbsp;&nbsp; FrameWorks </a>
+                                        <a href=""> PHP  FrameWorks </a>
                                     </li>
                                     <li>
-                                        <a href=""> Asp.net &nbsp;&nbsp; Core </a>
+                                        <a href=""> Asp.net  Core </a>
                                     </li>
                                 </ul>
                             </li>
                             <li>
-                                <a href=""> Windows &nbsp;&nbsp; Programming </a>
+                                <a href=""> Windows  Programming </a>
                             </li>
 
                             <li>
-                                <a href=""> Web &nbsp;&nbsp; Design </a>
+                                <a href=""> Web  Design </a>
                                 <ul>
                                     <li>
-                                        <a href=""> Web &nbsp;&nbsp; Design </a>
+                                        <a href=""> Web  Design </a>
                                     </li>
                                     <li>
                                         <a href=""> Bootstrap </a>
@@ -72,7 +72,7 @@ const MainNav = () => {
                                 <a href="">SEO </a>
                             </li>
                             <li>
-                                <a href="">Operation &nbsp;&nbsp; System </a>
+                                <a href="">Operation  System </a>
                             </li>
                         </ul>
                     </nav>

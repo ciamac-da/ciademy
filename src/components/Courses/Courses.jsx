@@ -6,7 +6,7 @@ const Courses = () => {
         <>
                             <section className="terms-items">
                         <header>
-                            <h2 className="h2"> Last &nbsp; Courses </h2>
+                            <h2 className="h2"> Last  Courses </h2>
                             <Link to="/allcourses"> All Courses </Link>
                         
                         </header>

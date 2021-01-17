@@ -14,12 +14,21 @@ const [         ,  forceUpdate] = useState(  );
 const validator = useRef(new simpleReactValidator(
     {
         messages:{
-            required:"Please fill out this field",
+            required:"Please    fill out this field",
             min: "Required at least 6 characters!",
             email: "E-Mail is invalid",
             max: "Maximum 30 characters are allowed!"
         },
-        element: message => <div style={{color:"red"}}>{message}</div>
+        element: message => <div 
+        style={{
+            color:"red",
+            display: "flex",
+            justifyContent: "center",
+            textAlign: "center",
+            background: "black",
+            fontSize: "16px",
+        }}
+        >{message}</div>
     }
 ));
 
@@ -91,7 +100,7 @@ if(status === 200){
                                  }
                                 }
                                 autoComplete="off"
-                                required
+                              //  required
                             />
                         </div>
                         {validator.current.message(
@@ -117,7 +126,7 @@ if(status === 200){
                                 }
                                 }
                                 autoComplete="off"
-                                required
+                                //required
                             />
                         </div>
                         {validator.current.message(
