@@ -185,7 +185,7 @@ console.log(user) */
                             {validator.current.message(
                                 "password",
                                  password,
-                                "required|min:6|max:20"
+                                "required|min:6|max:30"
                             )}
 
                         <div className="accept-rules">

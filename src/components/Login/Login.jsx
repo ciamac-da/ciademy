@@ -1,12 +1,27 @@
-import React, {useState} from "react";
-import reactSimpleValidator from "simple-react-validator";
+import React, {useState, useRef} from "react";
+import simpleReactValidator from "simple-react-validator";
 import { NavLink, withRouter, Redirect } from 'react-router-dom';
 import { loginUser } from '../../sevices/userService';
 import { toast } from 'react-toastify';
 const Login = ({history}) => {
 
-const [email, setEmail]= useState("");
-const [password, setPassword]= useState("");
+const [email    , setEmail    ] = useState("");
+const [password , setPassword ] = useState("");
+const [         ,  forceUpdate] = useState(  );
+
+
+
+const validator = useRef(new simpleReactValidator(
+    {
+        messages:{
+            required:"Please fill out this field",
+            min: "Required at least 6 characters!",
+            email: "E-Mail is invalid",
+            max: "Maximum 30 characters are allowed!"
+        },
+        element: message => <div style={{color:"red"}}>{message}</div>
+    }
+));
 
 
 const reset = () =>{
@@ -19,7 +34,8 @@ const handleSubmit = async event =>{
     const user ={email, password}
 
 try{
-const {status,data} = await loginUser(user)
+if(validator.current.allValid()){
+    const {status,data} = await loginUser(user)
 if(status === 200){
     toast.success("User logged in successfully!", {
         position:"bottom-right", 
@@ -30,8 +46,17 @@ if(status === 200){
     history.replace("/");
     reset();
 }
+}else{
+    validator.current.showMessages();
+    forceUpdate(1);
+}
 } catch(err){
-console.log(err);
+    toast.error("Something is wrong",{
+        position:"bottom-right",
+        closeOnClick:true
+    });
+    console.log(err)
+    reset();
 }
 
 }
@@ -59,12 +84,21 @@ console.log(err);
                                 placeholder="Email Address"
                                 aria-describedby="email-address"
                                 value={email}
-                                onChange={e=> setEmail(e.target.value)}
+                                name="email"
+                                onChange={e=>{
+                                 setEmail(e.target.value)
+                                 validator.current.showMessageFor("email")
+                                 }
+                                }
                                 autoComplete="off"
                                 required
-
                             />
                         </div>
+                        {validator.current.message(
+                            "email",
+                            email,
+                            "required|email"
+                        )}
 
                         <div className="input-group">
                             <span className="input-group-addon" id="password">
@@ -76,12 +110,21 @@ console.log(err);
                                 placeholder="Password "
                                 aria-describedby="password"
                                 value={password}
-                                onChange={e=> setPassword(e.target.value)}
+                                name="password"
+                                onChange={e=> {
+                                    setPassword(e.target.value);
+                                    validator.current.showMessageFor("password");
+                                }
+                                }
                                 autoComplete="off"
                                 required
                             />
                         </div>
-
+                        {validator.current.message(
+                            "password",
+                            password,
+                            "required|min:6|max:30"
+                        )}
                         <div className="remember-me">
                             <label>
                                 <input type="checkbox" name="" /> &nbsp;&nbsp; Remember&nbsp;&nbsp;Me{" "}
