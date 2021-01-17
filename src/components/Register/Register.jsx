@@ -9,13 +9,17 @@ const Register = () => {
 const[fullname ,  setFullname] = useState("");
 const[email    ,  setEmail   ] = useState("");
 const[password ,  setPassword] = useState("");
-const[         ,  forceUpdate] = useState();
+const[         ,  forceUpdate] = useState(  );
+const[policy   ,    setPolicy] = useState(  );
 
 
 const validator = useRef(new simpleValidator(
     {
         messages:{
-            required:"Please fill out this field!"
+            required:"Please fill out this field!",
+            min: "Required at least 6 characters!",
+            email: "E-Mail is invalid",
+            max: "Maximum 20 characters are allowed!"
         },
         element: message => <div style={{color:"red"}}>{message}</div>
     }
@@ -126,7 +130,7 @@ console.log(user) */
                             {validator.current.message(
                                 "fullname", 
                                 fullname,
-                                "required|min:6" 
+                                "required|min:6",
                                 )}
 
                         <div className="input-group">
@@ -138,16 +142,25 @@ console.log(user) */
                             </span>
                             <input
                                 type="text"
+                                name="email"
                                 className="form-control"
-                                placeholder="Email"
+                                placeholder="E-mail"
                                 aria-describedby="email-address"
                                 value={email}
-                                onChange={e=>setEmail(e.target.value)}
+                                onChange={e=> {
+                                setEmail(e.target.value);
+                                validator.current.showMessageFor("email")
+                                }
+                                }
                                 autoComplete="off"
                                 required
-
                             />
                         </div>
+                        {validator.current.message(
+                            "email",
+                             email,
+                             "required|email"
+                        )}
 
                         <div className="input-group">
                             <span className="input-group-addon" id="password">
@@ -159,16 +172,34 @@ console.log(user) */
                                 placeholder="Password"
                                 aria-describedby="password"
                                 value={password}
-                                onChange={ e=>setPassword(e.target.value) }
+                                name="password"
+                                onChange={ e=>{
+                                setPassword(e.target.value);
+                                validator.current.showMessageFor("password")
+                                }
+                                }
                                 autoComplete="off"
                                 required
-
                             />
                         </div>
+                            {validator.current.message(
+                                "password",
+                                 password,
+                                "required|min:6|max:20"
+                            )}
 
                         <div className="accept-rules">
                             <label>
-                                <input type="checkbox" name="" />
+                                <input 
+                                type="checkbox" 
+                                name="policy" 
+                                value={policy}
+                                onChange={e=>{
+                                    setPolicy(e.currentTarget.checked);
+                                    validator.current.showMessageFor("policy");
+                                }
+                                }
+                                />
                                  &nbsp;&nbsp;I 
                                  &nbsp;&nbsp;accept 
                                  &nbsp;&nbsp;the 
@@ -181,6 +212,11 @@ console.log(user) */
                               {" "}
                             </label>
                         </div>
+                        {validator.current.message(
+                            "policy",
+                             policy,
+                             "required"
+                        )}
 
                         <div className="link">
                             <a href="">
