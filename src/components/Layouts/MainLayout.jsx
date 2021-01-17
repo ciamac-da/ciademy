@@ -4,6 +4,7 @@ import Foorter from "../common/Footer.jsx";
 import MainNav from '../Navs/MainNav.jsx';
 import TopNav from '../Navs/TopNav.jsx';
 import Header from '../common/Header.jsx';
+import Helmet from "react-helmet";
 
 
 const MainLayout = props => {
@@ -11,6 +12,9 @@ const MainLayout = props => {
     return ( 
         <>
         <Fragment>
+        <Helmet>
+          <title>Ciademy/Home</title>
+         </Helmet>
         <div className="landing-layer">
         <div className="container">
         <TopNav 

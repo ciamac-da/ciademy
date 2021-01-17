@@ -4,6 +4,7 @@ import { NavLink, withRouter } from 'react-router-dom';
 import { loginUser } from '../../services/userService';
 import { toast } from 'react-toastify';
 import {Sugar} from 'react-preloaders';
+import Helmet from "react-helmet";
 
 const Login = ({history}) => {
 
@@ -83,9 +84,12 @@ if(status === 200){
                 <img src="https://img.icons8.com/ios/50/000000/security-user-male.png" className="myLogo"/>
                     <h2 className="h2">Login </h2>
                 </header>
-                {loading ? (
+                <Helmet>
+                        <title>Ciademy/Login</title>
+                    </Helmet>
+             {/*    {loading ? (
                     <Sugar time={0} color="#fc03d7" customLoading={loading} />
-                ) : null}
+                ) : null} */}
                 <div className="form-layer">
                     <form onSubmit={handleSubmit}>
                         <div className="input-group">

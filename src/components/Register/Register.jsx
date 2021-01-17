@@ -1,11 +1,10 @@
-import React, {useState, useRef} from "react";
+import React, {useState, useRef, useEffect} from "react";
 import simpleValidator from "simple-react-validator";
 import { NavLink } from 'react-router-dom';
 import { toast } from "react-toastify";
 import { registerUser } from './../../services/userService';
 import { Sugar } from 'react-preloaders';
-
-
+import Helmet from "react-helmet"
 const Register = ({history}) => {
 
 const[fullname ,  setFullname] = useState("");
@@ -38,6 +37,11 @@ const validator = useRef(
     }
 ));
 
+/* useEffect(()=>{
+    document.title = "Ciademy / Register"
+},[]) */
+
+
 const reset = () =>{
     setFullname("");
     setEmail("");
@@ -63,7 +67,7 @@ const handleSubmit = async event =>{
                 closeOnClick: true
             });
             setLoading(false);
-            history.replace("/login");
+            history.push("/login");
             reset();
        }
      } else{
@@ -123,7 +127,12 @@ console.log(user) */
                 <img src="https://img.icons8.com/ios/50/000000/security-user-male.png" className="myLogo"/>
                     <h2 className="h2">Register </h2>
                     </header>
-               
+                    <Helmet>
+                        <title>Ciademy/Register</title>
+                    </Helmet>
+                 {/*    {loading ? (
+                    <Sugar time={0} color="#fc03d7" customLoading={loading} />
+                ) : null} */}
                 <div className="form-layer">
                     <form onSubmit={handleSubmit}>
                         <div className="input-group">
