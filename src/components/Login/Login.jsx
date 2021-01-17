@@ -25,8 +25,9 @@ const validator = useRef(new simpleReactValidator(
             display: "flex",
             justifyContent: "center",
             textAlign: "center",
-            background: "black",
+            background: "white",
             fontSize: "16px",
+            textShadow: "4px 0px 15px black",
         }}
         >{message}</div>
     }

@@ -19,9 +19,19 @@ const validator = useRef(new simpleValidator(
             required:"Please fill out this field!",
             min: "Required at least 6 characters!",
             email: "E-Mail is invalid",
-            max: "Maximum 20 characters are allowed!"
+            max: "Maximum 30 characters are allowed!"
         },
-        element: message => <div style={{color:"red"}}>{message}</div>
+        element: message => <div 
+        style={{
+            color:"red",
+            display: "flex",
+            justifyContent: "center",
+            textAlign: "center",
+            background: "white",
+            fontSize: "16px",
+            textShadow: "4px 0px 15px black",
+            }}
+            >{message}</div>
     }
 ));
 
@@ -57,7 +67,7 @@ const handleSubmit = async event =>{
      }
 
   } catch(err) {
-    toast.error("Something is wrong",{
+    toast.error("Something went wrong!",{
         position:"bottom-right",
         closeOnClick:true
     });
@@ -124,7 +134,7 @@ console.log(user) */
                                 validator.current.showMessageFor("fullname")
                                 }}
                                 autoComplete="off"
-                                //required
+                                required
                             />
                         </div>
                             {validator.current.message(
@@ -199,16 +209,7 @@ console.log(user) */
                                     validator.current.showMessageFor("policy");
                                 }
                                 }
-                                />
-                                 &nbsp;&nbsp;I 
-                                 &nbsp;&nbsp;accept 
-                                 &nbsp;&nbsp;the 
-                                 &nbsp;&nbsp;rules 
-                                 &nbsp;&nbsp;and 
-                                 &nbsp;&nbsp;regulations 
-                                 &nbsp;&nbsp;of 
-                                 &nbsp;&nbsp;the 
-                                 &nbsp;&nbsp;site! 
+                                /> I accept the rules and regulations of the site!
                               {" "}
                             </label>
                         </div>
@@ -222,9 +223,7 @@ console.log(user) */
                             <a href="">
                                 {" "}
                                 <img src="https://img.icons8.com/ios-glyphs/24/000000/terms-and-conditions.png"/>
-                                &nbsp;&nbsp;Terms 
-                                &nbsp;&nbsp;and 
-                                &nbsp;&nbsp;Conditions
+                                Terms and Conditions
                             </a>
                             <NavLink to="/login">
                                 {" "}
