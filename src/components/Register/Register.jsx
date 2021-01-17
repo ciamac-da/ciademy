@@ -2,19 +2,22 @@ import React, {useState, useRef} from "react";
 import simpleValidator from "simple-react-validator";
 import { NavLink } from 'react-router-dom';
 import { toast } from "react-toastify";
-import { registerUser } from '../../sevices/userService';
+import { registerUser } from './../../services/userService';
+import { Sugar } from 'react-preloaders';
 
-const Register = () => {
+
+const Register = ({history}) => {
 
 const[fullname ,  setFullname] = useState("");
 const[email    ,  setEmail   ] = useState("");
 const[password ,  setPassword] = useState("");
 const[         ,  forceUpdate] = useState(  );
 const[policy   ,    setPolicy] = useState(  );
+const[ loading ,   setLoading] = useState(false);
 
 
-const validator = useRef(new simpleValidator(
-    {
+const validator = useRef(
+    new simpleValidator({
         messages:{
             required:"Please fill out this field!",
             min: "Required at least 6 characters!",
@@ -52,12 +55,15 @@ const handleSubmit = async event =>{
     
   try {
      if(validator.current.allValid()){
+        setLoading(true);
         const {status} = await registerUser(user)
         if(status === 201){ 
             toast.success("New User is registered successfully!", {
                 position:"bottom-right", 
                 closeOnClick: true
             });
+            setLoading(false);
+            history.replace("/login");
             reset();
        }
      } else{
@@ -72,6 +78,7 @@ const handleSubmit = async event =>{
         closeOnClick:true
     });
     console.log(err)
+    setLoading(false);
     reset();
   }
 
@@ -116,6 +123,7 @@ console.log(user) */
                 <img src="https://img.icons8.com/ios/50/000000/security-user-male.png" className="myLogo"/>
                     <h2 className="h2">Register </h2>
                     </header>
+               
                 <div className="form-layer">
                     <form onSubmit={handleSubmit}>
                         <div className="input-group">

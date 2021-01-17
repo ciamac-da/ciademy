@@ -1,14 +1,16 @@
 import React, {useState, useRef} from "react";
 import simpleReactValidator from "simple-react-validator";
-import { NavLink, withRouter, Redirect } from 'react-router-dom';
-import { loginUser } from '../../sevices/userService';
+import { NavLink, withRouter } from 'react-router-dom';
+import { loginUser } from '../../services/userService';
 import { toast } from 'react-toastify';
+import {Sugar} from 'react-preloaders';
+
 const Login = ({history}) => {
 
-const [email    , setEmail    ] = useState("");
-const [password , setPassword ] = useState("");
-const [         ,  forceUpdate] = useState(  );
-
+const [ email    ,  setEmail    ] = useState("");
+const [ password ,  setPassword ] = useState("");
+const [          ,  forceUpdate ] = useState(  );
+const [ loading  ,   setLoading ] = useState(false);
 
 
 const validator = useRef(new simpleReactValidator(
@@ -45,6 +47,7 @@ const handleSubmit = async event =>{
 
 try{
 if(validator.current.allValid()){
+    //setLoading(true);
     const {status,data} = await loginUser(user)
 if(status === 200){
     toast.success("User logged in successfully!", {
@@ -53,6 +56,7 @@ if(status === 200){
     });
     console.log(data)
     localStorage.setItem("token", data.token)
+    //setLoading(false)
     history.replace("/");
     reset();
 }
@@ -61,6 +65,7 @@ if(status === 200){
     forceUpdate(1);
 }
 } catch(err){
+    //setLoading(false);
     toast.error("Something is wrong",{
         position:"bottom-right",
         closeOnClick:true
@@ -78,7 +83,9 @@ if(status === 200){
                 <img src="https://img.icons8.com/ios/50/000000/security-user-male.png" className="myLogo"/>
                     <h2 className="h2">Login </h2>
                 </header>
-
+                {loading ? (
+                    <Sugar time={0} color="#fc03d7" customLoading={loading} />
+                ) : null}
                 <div className="form-layer">
                     <form onSubmit={handleSubmit}>
                         <div className="input-group">
