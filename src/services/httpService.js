@@ -16,7 +16,7 @@ if(!expectedErrors){
     });
 }
 return Promise.reject(error)
-})
+});
 
 
 

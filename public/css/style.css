@@ -21,6 +21,7 @@ body {
 }
 input{
     text-align: center;
+    font-size: 18px !important;
 }
 .myhead{
     display: flex;
@@ -81,6 +82,7 @@ li{
 .container-content{
    background-color: #2aaf27 !important;
    color: white;
+   box-shadow: 16px 15px 20px black !important;
 }
 .remember-me{
     text-shadow: 3px 3px 3px black !important;
