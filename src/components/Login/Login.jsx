@@ -3,9 +3,10 @@ import simpleReactValidator from "simple-react-validator";
 import { NavLink, withRouter } from 'react-router-dom';
 import { loginUser } from '../../services/userService';
 import { toast } from 'react-toastify';
-import {Sugar} from 'react-preloaders';
+import {Planets} from 'react-preloaders';
 import Fade from 'react-reveal/Fade';
 import Helmet from "react-helmet";
+import Page from 'react-page-loading';
 
 const Login = ({history}) => {
 
@@ -49,7 +50,7 @@ const handleSubmit = async event =>{
 
 try{
 if(validator.current.allValid()){
-    //setLoading(true);
+    setLoading(true);
     const {status,data} = await loginUser(user)
 if(status === 200){
     toast.success("User logged in successfully!", {
@@ -58,7 +59,7 @@ if(status === 200){
     });
     console.log(data)
     localStorage.setItem("token", data.token)
-    //setLoading(false)
+    setLoading(false)
     history.replace("/");
     reset();
 }
@@ -67,7 +68,7 @@ if(status === 200){
     forceUpdate(1);
 }
 } catch(err){
-    //setLoading(false);
+    setLoading(false);
     toast.error("Something is wrong",{
         position:"bottom-right",
         closeOnClick:true
@@ -89,9 +90,9 @@ if(status === 200){
                 <Helmet>
                         <title>Ciademy/Login</title>
                     </Helmet>
-             {/*    {loading ? (
-                    <Sugar time={0} color="#fc03d7" customLoading={loading} />
-                ) : null} */}
+                    {loading ? (
+                    <Planets time={3000} color="black" background="green" customLoading={loading} />
+                ) : null}
                 <div className="form-layer">
                     <form onSubmit={handleSubmit}>
                         <div className="input-group">
@@ -114,7 +115,7 @@ if(status === 200){
                                  }
                                 }
                                 autoComplete="off"
-                              //  required
+                                required
                             />
                         </div>
                         {validator.current.message(
@@ -128,7 +129,7 @@ if(status === 200){
                                 <i className="zmdi zmdi-lock"></i>
                             </span>
                             <input
-                                type="text"
+                                type="password"
                                 className="form-control"
                                 placeholder="Password "
                                 aria-describedby="password"
@@ -140,7 +141,7 @@ if(status === 200){
                                 }
                                 }
                                 autoComplete="off"
-                                //required
+                                required
                             />
                         </div>
                         {validator.current.message(

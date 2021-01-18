@@ -5,7 +5,9 @@ import { toast } from "react-toastify";
 import { registerUser } from './../../services/userService';
 import { Planets } from 'react-preloaders';
 import Fade from 'react-reveal/Fade';
-import Helmet from "react-helmet"
+import Helmet from "react-helmet";
+import Page from 'react-page-loading';
+
 const Register = ({history}) => {
 
 const[fullname ,  setFullname] = useState("");
@@ -134,8 +136,9 @@ console.log(user) */
                         <title>Ciademy/Register</title>
                     </Helmet>
                     {loading ? (
-                    <Planets time={0} color="#fc03d7" customLoading={loading} />
+                    <Planets time={3000} color="black" background="green" customLoading={loading} />
                 ) : null}
+               {/*  <Planets color="black" background="green" /> */}
                 <div className="form-layer">
                     <form onSubmit={handleSubmit}>
                         <div className="input-group">
