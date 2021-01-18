@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 import { toast } from "react-toastify";
 import { registerUser } from './../../services/userService';
 import { Sugar } from 'react-preloaders';
+import Fade from 'react-reveal/Fade';
 import Helmet from "react-helmet"
 const Register = ({history}) => {
 
@@ -122,6 +123,8 @@ console.log(user) */
     return (
         <>
         <main className="client-page">
+        <Fade left>
+
             <div className="container-content">
             <header>
                 <img src="https://img.icons8.com/ios/50/000000/security-user-male.png" className="myLogo"/>
@@ -260,6 +263,7 @@ console.log(user) */
                     </form>
                 </div>
             </div>
+        </Fade>
         </main>
         </>
     );

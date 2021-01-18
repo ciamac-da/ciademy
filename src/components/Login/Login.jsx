@@ -4,6 +4,7 @@ import { NavLink, withRouter } from 'react-router-dom';
 import { loginUser } from '../../services/userService';
 import { toast } from 'react-toastify';
 import {Sugar} from 'react-preloaders';
+import Fade from 'react-reveal/Fade';
 import Helmet from "react-helmet";
 
 const Login = ({history}) => {
@@ -79,6 +80,7 @@ if(status === 200){
 
     return (
         <main className="client-page">
+        <Fade left>
             <div className="container-content">
                 <header>
                 <img src="https://img.icons8.com/ios/50/000000/security-user-male.png" className="myLogo"/>
@@ -175,6 +177,7 @@ if(status === 200){
                     </form>
                 </div>
             </div>
+        </Fade>
         </main>
     );
 };
