@@ -12,7 +12,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
-    "react-preloaders": "^3.0.3",
+    "react-preloaders": "git+https://github.com/ciamac-da/react-preloaders.git",
     "react-reveal": "^1.2.2",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",

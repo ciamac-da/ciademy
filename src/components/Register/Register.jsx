@@ -3,7 +3,7 @@ import simpleValidator from "simple-react-validator";
 import { NavLink } from 'react-router-dom';
 import { toast } from "react-toastify";
 import { registerUser } from './../../services/userService';
-import { Sugar } from 'react-preloaders';
+import { Planets } from 'react-preloaders';
 import Fade from 'react-reveal/Fade';
 import Helmet from "react-helmet"
 const Register = ({history}) => {
@@ -13,7 +13,7 @@ const[email    ,  setEmail   ] = useState("");
 const[password ,  setPassword] = useState("");
 const[         ,  forceUpdate] = useState(  );
 const[policy   ,    setPolicy] = useState(  );
-const[ loading ,   setLoading] = useState(false);
+const[loading  ,   setLoading] = useState(false);
 
 
 const validator = useRef(
@@ -63,7 +63,7 @@ const handleSubmit = async event =>{
         setLoading(true);
         const {status} = await registerUser(user)
         if(status === 201){ 
-            toast.success("New User is registered successfully!", {
+            toast.success(`${fullname} is registered successfully!`, {
                 position:"bottom-right", 
                 closeOnClick: true
             });
@@ -133,9 +133,9 @@ console.log(user) */
                     <Helmet>
                         <title>Ciademy/Register</title>
                     </Helmet>
-                 {/*    {loading ? (
-                    <Sugar time={0} color="#fc03d7" customLoading={loading} />
-                ) : null} */}
+                    {loading ? (
+                    <Planets time={0} color="#fc03d7" customLoading={loading} />
+                ) : null}
                 <div className="form-layer">
                     <form onSubmit={handleSubmit}>
                         <div className="input-group">
