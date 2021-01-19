@@ -138,7 +138,6 @@ console.log(user) */
                     {loading ? (
                     <Planets time={3000} color="black" background="green" customLoading={loading} />
                 ) : null}
-               {/*  <Planets color="black" background="green" /> */}
                 <div className="form-layer">
                     <form onSubmit={handleSubmit}>
                         <div className="input-group">

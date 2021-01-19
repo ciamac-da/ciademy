@@ -146,6 +146,10 @@ a{
     font-weight: bolder;
     padding: 5px;
 }
+
+.NfMjk .sun{
+    background-color: black !important;
+}
 /********** Transition ************/
 a,
 i,
