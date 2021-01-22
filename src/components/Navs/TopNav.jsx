@@ -23,7 +23,7 @@ const TopNav = () => {
                                         &nbsp;
                                         <NavLink to="/login" className="Login"  activeStyle={{color:"green", fontSize:"30px !important", backgroundColor:"white", textShadow: "1px 1px 1px green" , fontWeight:"lighter"}}> Login</NavLink> 
                                         &nbsp;
-                                        /
+                                        <span className="mySlash">/</span>
                                         &nbsp;
                                         <NavLink to="/register" className="Login" activeStyle={{color:"green", fontSize:"30px !important", backgroundColor:"white", textShadow: "1px 1px 1px green" , fontWeight:"lighter"}}> Register </NavLink>
                                     </div>
