@@ -1,5 +1,7 @@
 *{
     direction: ltr !important;
+    word-spacing: 0px !important;
+
 
 }
 
@@ -19,10 +21,15 @@ body {
 }
 input{
     text-align: center;
+    font-size: 18px !important;
 }
 .myhead{
     display: flex;
     justify-content: flex-end;
+}
+.myPrice{
+    font-size: 16px;
+    color: black !important;
 }
 /***********Default setting************/
 
@@ -55,6 +62,10 @@ h6 {
     margin: 0;
     padding: 0;
 }
+.h2{
+    color: white !important;
+    text-shadow: 3px 3px 3px black !important;
+}
 img {
     max-width: 100%;
 }
@@ -68,6 +79,77 @@ ul{
 li{
     list-style: none !important;
 }
+.container-content{
+   background-color: #2aaf27 !important;
+   color: white;
+   box-shadow: 16px 15px 20px black !important;
+}
+.remember-me{
+    text-shadow: 3px 3px 3px black !important;
+    font-size: 16px;
+}
+.accept-rules{
+    text-shadow: 3px 3px 3px black !important;
+    font-size: 16px;
+}
+.myBtn{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.myBtn2{
+    color: #2aaf27;
+    font-weight: bolder;
+    font-size: 15px;
+    text-shadow: 3px 3px 3px white !important;
+}
+.myBtn2:hover{
+    background-color: white;
+}
+.myLogo{
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+.signin{
+    font-size: 20px;
+}
+.myHome{
+    font-size: 24px !important;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+.myHeader{
+    display: flex;
+    justify-content: center;
+}
+.myLine{
+    display: flex;
+    justify-content: space-around;
+}
+a{
+    font-size: 20px !important;
+}
+.myInput{
+    font-size: 18px !important;
+    
+}
+.adjList{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.Login{
+    font-size: 24px !important;
+    border-radius: 10px;
+    font-weight: bolder;
+    padding: 5px;
+}
+
+.NfMjk .sun{
+    background-color: black !important;
+}
 /********** Transition ************/
 a,
 i,
@@ -78,6 +160,9 @@ form button {
     -ms-transition: all 0.2s linear 0s;
     -o-transition: all 0.2s linear 0s;
     transition: all 0.2s linear 0s;
+}
+#home-page{
+    background-color: silver !important;
 }
 
 .user-account .avatar-layer ul:after,
@@ -110,7 +195,7 @@ form button {
     line-height: 25px;
     color: #fff;
     font-size: 14px;
-    padding: 0 0 0 15px;
+    padding: 5px;
 }
 .landing-layer nav .clientarea {
     text-align: left;
@@ -378,11 +463,14 @@ footer .top-footer {
 .client-page .container-content .link a {
     display: block;
     line-height: 30px;
-    font-size: 14px;
-    color: #1cbdf9;
+    font-size: 16px;
+    color: white;
+    text-shadow: 3px 3px 3px black !important;
 }
 .client-page .container-content .link a:hover {
     color: #2c373b;
+    text-shadow: 3px 3px 3px white !important;
+
 }
 .client-page .container-content .link a i {
     font-size: 17px;

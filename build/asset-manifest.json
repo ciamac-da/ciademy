@@ -1,17 +1,20 @@
 {
   "files": {
-    "main.js": "/static/js/main.f2da0ab6.chunk.js",
-    "main.js.map": "/static/js/main.f2da0ab6.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.9c45ca7b.js",
-    "runtime-main.js.map": "/static/js/runtime-main.9c45ca7b.js.map",
-    "static/js/2.a02eabbc.chunk.js": "/static/js/2.a02eabbc.chunk.js",
-    "static/js/2.a02eabbc.chunk.js.map": "/static/js/2.a02eabbc.chunk.js.map",
-    "index.html": "/index.html",
-    "static/js/2.a02eabbc.chunk.js.LICENSE.txt": "/static/js/2.a02eabbc.chunk.js.LICENSE.txt"
+    "main.js": "/ciademy/static/js/main.24f7fa9c.chunk.js",
+    "main.js.map": "/ciademy/static/js/main.24f7fa9c.chunk.js.map",
+    "runtime-main.js": "/ciademy/static/js/runtime-main.efe73356.js",
+    "runtime-main.js.map": "/ciademy/static/js/runtime-main.efe73356.js.map",
+    "static/css/2.ccc6f86f.chunk.css": "/ciademy/static/css/2.ccc6f86f.chunk.css",
+    "static/js/2.0c179387.chunk.js": "/ciademy/static/js/2.0c179387.chunk.js",
+    "static/js/2.0c179387.chunk.js.map": "/ciademy/static/js/2.0c179387.chunk.js.map",
+    "index.html": "/ciademy/index.html",
+    "static/css/2.ccc6f86f.chunk.css.map": "/ciademy/static/css/2.ccc6f86f.chunk.css.map",
+    "static/js/2.0c179387.chunk.js.LICENSE.txt": "/ciademy/static/js/2.0c179387.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.9c45ca7b.js",
-    "static/js/2.a02eabbc.chunk.js",
-    "static/js/main.f2da0ab6.chunk.js"
+    "static/js/runtime-main.efe73356.js",
+    "static/css/2.ccc6f86f.chunk.css",
+    "static/js/2.0c179387.chunk.js",
+    "static/js/main.24f7fa9c.chunk.js"
   ]
 }
