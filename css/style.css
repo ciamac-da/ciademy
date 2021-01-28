@@ -25,7 +25,11 @@ input{
 }
 .myhead{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
+}
+.mySlash{
+    display: flex;
+    padding-top: 7px;
 }
 .myPrice{
     font-size: 16px;
@@ -114,6 +118,8 @@ li{
 }
 .signin{
     font-size: 20px;
+    display: flex;
+    justify-content: center;
 }
 .myHome{
     font-size: 24px !important;
