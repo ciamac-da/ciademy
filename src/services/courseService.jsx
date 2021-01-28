@@ -1,6 +1,6 @@
-import http from "./userService";
+import http from "./httpService.jsx";
 import config from "./config.json";
 
 export const getCourses = () => {
-http.get(`${config.ciademyUrl}/api/courses`)
+return http.get(`${config.ciademyUrl}/api/courses`)
 }

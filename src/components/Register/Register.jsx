@@ -2,7 +2,7 @@ import React, {useState, useRef, useEffect} from "react";
 import simpleValidator from "simple-react-validator";
 import { NavLink } from 'react-router-dom';
 import { toast } from "react-toastify";
-import { registerUser } from './../../services/userService';
+import { registerUser } from './../../services/userService.jsx';
 import { Planets } from 'react-preloaders';
 import Fade from 'react-reveal/Fade';
 import Helmet from "react-helmet";

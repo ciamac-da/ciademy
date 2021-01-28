@@ -1,4 +1,4 @@
-import http from "./httpService";
+import http from "./httpService.jsx";
 import config from "./config.json";
 
 export const registerUser = user =>{

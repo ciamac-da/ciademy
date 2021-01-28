@@ -1,7 +1,7 @@
 import React, {useState, useRef} from "react";
 import simpleReactValidator from "simple-react-validator";
 import { NavLink, withRouter } from 'react-router-dom';
-import { loginUser } from '../../services/userService';
+import { loginUser } from '../../services/userService.jsx';
 import { toast } from 'react-toastify';
 import {Planets} from 'react-preloaders';
 import Fade from 'react-reveal/Fade';
