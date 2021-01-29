@@ -10,16 +10,13 @@ error.response.status >= 400 &&
 error.response.status <  500;
 if(!expectedErrors){
     console.log(error);
-    toast.error("There is a server issue",{
+    toast.error("There is an issue in Server!",{
         position:"bottom-right",
         closeOnClick:true
     });
 }
 return Promise.reject(error)
 });
-
-
-
 
 export default {
     get   :   axios.get,
