@@ -1,6 +1,19 @@
-import React from 'react';
-
+import React, {useState} from 'react';
+import { paginate } from '../../utils/paginate';
+import { useSelector } from "react-redux";
 const AllCourses = () => {
+
+const [perPage, setPerPage] = useState(9);
+const [currentPage, setCurrentPage] = useState(1);
+
+const courses = useSelector(state => state.courses)
+
+const handlePageChange = page =>{
+    setCurrentPage(page)
+}
+
+const archiveCourses = paginate(courses, currentPage, perPage);
+
     return ( 
         <>
        <section className="term-categories">
