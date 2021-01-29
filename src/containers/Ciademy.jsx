@@ -1,7 +1,7 @@
 import React from "react";
 import {Switch, Route} from "react-router-dom";
-import Courses from '../components/Courses/Courses.jsx';
-import AllCourses from "../components/Courses/AllCourses.jsx";
+import Courses from '../components/Course/Course.jsx';
+import AllCourses from "../components/Course/Archive";
 import MainLayout from '../components/Layouts/MainLayout.jsx';
 import Login from "../components/Login/Login";
 import Register from '../components/Register/Register';

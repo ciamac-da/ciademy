@@ -9,7 +9,7 @@ const AllCourses = () => {
                     <h1>
                         {" "}
                         <span> Web Development  Courses  </span>{" "}
-                    </h1>{" "}
+          s          </h1>{" "}
                     <span> Courses  1 2 3 </span>
                 </header>
 

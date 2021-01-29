@@ -1,8 +1,6 @@
 import axios from "axios";
 import { toast } from 'react-toastify';
-
 axios.defaults.headers.post["Content-Type"]= "application/json";
-
 axios.interceptors.response.use(null, error => {
 const expectedErrors =
 error.response               &&
