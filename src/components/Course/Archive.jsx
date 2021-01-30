@@ -1,9 +1,10 @@
 import React, {useState} from 'react';
 import { paginate } from '../../utils/paginate';
 import { useSelector } from "react-redux";
+import Pagination from '../common/Pagination';
 const AllCourses = () => {
 
-const [perPage, setPerPage] = useState(9);
+const [perPage] = useState(6);
 const [currentPage, setCurrentPage] = useState(1);
 
 const courses = useSelector(state => state.courses)
