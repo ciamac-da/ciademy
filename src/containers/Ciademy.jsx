@@ -9,6 +9,7 @@ import { useDispatch } from "react-redux";
 import { addUser } from './../actions/user.jsx';
 import { decodeToken } from '../utils/decodeToken';
 import { paginate } from '../utils/paginate';
+import Logout from '../components/Login/Logout';
 
 const Ciademy = () => {
   const dispatch = useDispatch();
@@ -32,6 +33,7 @@ const Ciademy = () => {
               <MainLayout>
               <Switch>
                 <Route path="/login" component={Login}></Route>
+                <Route path="/logout" component={Logout}></Route>
                 <Route path="/register" component={Register}></Route>
                 <Route path="/allcourses" component={Archive}></Route>
                 <Route path="/" exact component={Course}></Route>
