@@ -7,8 +7,13 @@ import {Planets} from 'react-preloaders';
 import Fade from 'react-reveal/Fade';
 import Helmet from "react-helmet";
 import Page from 'react-page-loading';
+import { useDispatch } from 'react-redux';
+import { addUser } from '../../actions/user';
+import { decodeToken } from '../../utils/decodeToken';
 
 const Login = ({history}) => {
+
+    const dispatch = useDispatch()
 
 const [ email    ,  setEmail    ] = useState("");
 const [ password ,  setPassword ] = useState("");
@@ -59,6 +64,7 @@ if(status === 200){
     });
     console.log(data)
     localStorage.setItem("token", data.token)
+    dispatch(addUser(decodeToken(data.token).payload.user))
     setLoading(false)
     history.replace("/");
     reset();

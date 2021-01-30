@@ -1,21 +1,40 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {Switch, Route} from "react-router-dom";
-import Courses from '../components/Course/Course.jsx';
-import AllCourses from "../components/Course/Archive";
+import Course from '../components/Course/Course.jsx';
+import Archive from "../components/Course/Archive";
 import MainLayout from '../components/Layouts/MainLayout.jsx';
 import Login from "../components/Login/Login";
 import Register from '../components/Register/Register';
+import { useDispatch } from "react-redux";
+import { addUser } from './../actions/user.jsx';
+import { decodeToken } from '../utils/decodeToken';
+import { paginate } from '../utils/paginate';
+
+const Ciademy = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (token) {
+        const decodedToken = decodeToken(token);
+        const dateNow = Date.now() / 1000;
+
+        if (decodedToken.payload.exp < dateNow)
+            localStorage.removeItem("token");
+        else dispatch(addUser(decodedToken.payload.user));
+    }
+}, []);
 
 
-const Ciademy = props => {
+
     return (
         <React.Fragment>
               <MainLayout>
               <Switch>
                 <Route path="/login" component={Login}></Route>
                 <Route path="/register" component={Register}></Route>
-                <Route path="/allcourses" component={AllCourses}></Route>
-                <Route path="/" exact component={Courses}></Route>
+                <Route path="/allcourses" component={Archive}></Route>
+                <Route path="/" exact component={Course}></Route>
               </Switch>
                 </MainLayout>
               </React.Fragment>
