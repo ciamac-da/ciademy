@@ -15,4 +15,5 @@ const Logout = ({history}) => {
 
 }
  
+
 export default withRouter(Logout);
