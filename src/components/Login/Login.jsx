@@ -1,18 +1,17 @@
 import React, {useState, useRef} from "react";
 import simpleReactValidator from "simple-react-validator";
-import { NavLink, withRouter } from 'react-router-dom';
+import { NavLink, Redirect, withRouter } from 'react-router-dom';
 import { loginUser } from '../../services/userService.jsx';
 import { toast } from 'react-toastify';
 import {Planets} from 'react-preloaders';
 import Fade from 'react-reveal/Fade';
 import Helmet from "react-helmet";
-import Page from 'react-page-loading';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { addUser } from '../../actions/user';
 import { decodeToken } from '../../utils/decodeToken';
-
+import {isEmpty} from "lodash"
 const Login = ({history}) => {
-
+    const user = useSelector(state=> state.user)
     const dispatch = useDispatch()
 
 const [ email    ,  setEmail    ] = useState("");
@@ -84,6 +83,8 @@ if(status === 200){
 }
 
 }
+
+if(!isEmpty(user)) return <Redirect to="/" />
 
     return (
         <main className="client-page">

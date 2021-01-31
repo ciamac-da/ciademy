@@ -18,7 +18,7 @@ const UserProfile = () => {
                                 <a href="" className="change-image">
                                     <i className="zmdi zmdi-edit"></i>
                                 </a>
-                                <img src="images/pic/avatar.jpg" />
+                                <img src="images/pic/avatar.png" />
                             </div>
                             <div className="detail">
                                 <span>{user.fullname}</span>
