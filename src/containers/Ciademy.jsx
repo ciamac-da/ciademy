@@ -10,6 +10,7 @@ import { addUser, clearUser } from './../actions/user.jsx';
 import { decodeToken } from '../utils/decodeToken';
 import { paginate } from '../utils/paginate';
 import Logout from '../components/Login/Logout';
+import PageNotFound from "./../components/common/404.jsx";
 import UserProfile from '../components/Profile/UserProfile';
 import { isEmpty } from "lodash";
 
@@ -49,6 +50,8 @@ const Ciademy = () => {
                 <Route path="/allcourses" component={Archive}></Route>
                 <Route path="/user-profile" component={UserProfile} />
                 <Route path="/" exact component={Course}></Route>
+                <Route                 component={PageNotFound}     /> 
+                <Route path="*" exact  component={PageNotFound}     />
               </Switch>
                 </MainLayout>
               </React.Fragment>
