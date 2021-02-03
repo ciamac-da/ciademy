@@ -3,7 +3,7 @@ import simpleReactValidator from "simple-react-validator";
 import { NavLink, Redirect, withRouter } from 'react-router-dom';
 import { loginUser } from '../../services/userService.jsx';
 import { toast } from 'react-toastify';
-import {Planets} from 'react-preloaders';
+//import {Planets} from 'react-preloaders';
 import Fade from 'react-reveal/Fade';
 import Helmet from "react-helmet";
 import { useDispatch, useSelector } from 'react-redux';
@@ -97,9 +97,9 @@ if(!isEmpty(user)) return <Redirect to="/" />
                 <Helmet>
                         <title>Ciademy/Login</title>
                     </Helmet>
-                    {loading ? (
+               {/*      {loading ? (
                     <Planets time={3000} color="black" background="green" customLoading={loading} />
-                ) : null}
+                ) : null} */}
                 <div className="form-layer">
                     <form onSubmit={handleSubmit}>
                         <div className="input-group">

@@ -3,7 +3,7 @@ import simpleValidator from "simple-react-validator";
 import { NavLink } from 'react-router-dom';
 import { toast } from "react-toastify";
 import { registerUser } from './../../services/userService.jsx';
-import { Planets } from 'react-preloaders';
+//import { Planets } from 'react-preloaders';
 import Fade from 'react-reveal/Fade';
 import Helmet from "react-helmet";
 import Page from 'react-page-loading';
@@ -135,9 +135,9 @@ console.log(user) */
                     <Helmet>
                         <title>Ciademy/Register</title>
                     </Helmet>
-                    {loading ? (
+             {/*        {loading ? (
                     <Planets time={3000} color="black" background="green" customLoading={loading} />
-                ) : null}
+                ) : null} */}
                 <div className="form-layer">
                     <form onSubmit={handleSubmit}>
                         <div className="input-group">
