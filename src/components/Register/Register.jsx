@@ -7,8 +7,11 @@ import { registerUser } from './../../services/userService.jsx';
 import Fade from 'react-reveal/Fade';
 import Helmet from "react-helmet";
 import Page from 'react-page-loading';
+import { hideLoading, showLoading } from "react-redux-loading-bar";
+import { useDispatch, useSelector } from "react-redux";
 
 const Register = ({history}) => {
+    const dispatch = useDispatch();
 
 const[fullname ,  setFullname] = useState("");
 const[email    ,  setEmail   ] = useState("");
@@ -62,6 +65,7 @@ const handleSubmit = async event =>{
     
   try {
      if(validator.current.allValid()){
+         dispatch(showLoading())
         setLoading(true);
         const {status} = await registerUser(user)
         if(status === 201){ 
@@ -69,6 +73,7 @@ const handleSubmit = async event =>{
                 position:"bottom-right", 
                 closeOnClick: true
             });
+            dispatch(hideLoading())
             setLoading(false);
             history.push("/login");
             reset();
@@ -86,6 +91,7 @@ const handleSubmit = async event =>{
     });
     console.log(err)
     setLoading(false);
+    dispatch(hideLoading())
     reset();
   }
 

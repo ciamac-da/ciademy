@@ -2,9 +2,10 @@ import { applyMiddleware, createStore, compose } from "redux";
 import thunk from "redux-thunk";
 import { reducers } from '../reducers/index.jsx';
 import { getAllCourses } from '../actions/courses';
+import { loadingBarMiddleware } from 'react-redux-loading-bar';
 
 export const store = createStore(reducers, compose(
-    applyMiddleware(thunk), 
+    applyMiddleware(thunk, loadingBarMiddleware()), 
     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 
 )

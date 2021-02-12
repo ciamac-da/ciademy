@@ -5,6 +5,7 @@ import MainNav from '../Navs/MainNav.jsx';
 import TopNav from '../Navs/TopNav.jsx';
 import Header from '../common/Header.jsx';
 import Helmet from "react-helmet";
+import { LoadingBar } from 'react-redux-loading-bar';
 
 
 const MainLayout = props => {
@@ -15,6 +16,9 @@ const MainLayout = props => {
         <Helmet>
           <title>Ciademy/Home</title>
          </Helmet>
+         <LoadingBar  
+         style={{backgroundColor: "green", heigth:"5px"}}
+         />
         <div className="landing-layer">
         <div className="container">
         <TopNav 
